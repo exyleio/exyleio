@@ -28,7 +28,7 @@ Basically every code written after this point is only an addition to the code wr
 
 Now that we have a solid foundation to work on, it's time to make the game feel like an actual game.
 In this stage, we fine tune the "game feel" until it's just right.
-This includes the control, weapon balance, map layout, server region election, etc.
+This includes the control, weapon balance, map layout, server region selection, etc.
 
 ## Beta dev
 
