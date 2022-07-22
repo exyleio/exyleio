@@ -63,8 +63,10 @@ Bonus points are rewarded for each penetrations.
 Explosive weapons in Exyle.io act quite similar to TNTs in Minecraft.
 When a RPG projectile or a grenade explode, it casts invisible rays in all direction,
 and the more ray hits a player, more damage is dealt.
-I like to think this as number of fragments that hit the player.
+You can think of this as the number of fragments that hit the player.
 The number and the length of these rays can be adjusted to tweak the damage and range.
+Also, in case of RPGs, the rays are longer and more dense in the front,
+so players are encouraged to make a direct hit.
 
 ### Swing
 
