@@ -16,7 +16,7 @@ check the [roadmap](./roadmap.md) for more information.
 ## Community
 
 All community interactions and announcements happen in our [discord server](https://discord.gg/synPSeuNFK).
-There, you can also get yourself the `Contributor` role to participate in development-related discussions.
+There, you can talk to other players or even participate in development-related discussions.
 
 ## Getting started
 

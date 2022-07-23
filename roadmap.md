@@ -38,7 +38,7 @@ but in terms of visuals and presentation, it is the most important stage by a lo
 
 ## Release
 
-Hold until: [webgpu](https://www.w3.org/TR/webgpu/) becomes a web standard. Learn more about it [here](./plans/webgpu.md).
+Hold until: [webgpu](https://www.w3.org/TR/webgpu/) becomes a web standard. Learn more about it [here](./fragments/webgpu.md).
 
-Once we smooth out all the rough edges, we can finally deliver the game to the public.
+Once we've smooth out all the rough edges, we can finally deliver the game to the public.
 Hopefully the game can pay for itself at this point.

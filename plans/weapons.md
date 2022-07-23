@@ -66,7 +66,7 @@ and the more ray hits a player, more damage is dealt.
 You can think of this as the number of fragments that hit the player.
 The number and the length of these rays can be adjusted to tweak the damage and range.
 Also, in case of RPGs, the rays are longer and more dense in the front,
-so players are encouraged to make a direct hit.
+so players are encouraged to make a direct hit as instead of relying on the splash damage.
 
 ### Swing
 
