@@ -2,8 +2,11 @@
 
 Game development is no easy task.
 Making a quality game takes a surprising amount of time and effort.
-That's why I have divided the development processes into different stages so it is much easier for me to manage different tasks, and also prevent myself from falling into the pit of unproductiveness.
-The following are the five major stages of development:
+That's why I have divided the development processes into different stages so it is much easier for me to manage different tasks,
+and to prevent myself from falling into the pit of unproductiveness.
+You can track the progress of each stage [here](https://github.com/exyleio/exyleio/milestones).
+
+Following are the five major stages of development:
 
 ## Planning
 
@@ -40,5 +43,8 @@ but in terms of visuals and presentation, it is the most important stage by a lo
 
 Hold until: [webgpu](https://www.w3.org/TR/webgpu/) becomes a web standard. Learn more about it [here](./fragments/webgpu.md).
 
+Although adding shiny new features is awesome, we will have to release the game eventually.
+Once the game has enough feature to not feel incomplete,
+we will stop adding new features for a moment and redirect all of our effort into squashing bugs and polishing existing features.
 Once we've smooth out all the rough edges, we can finally deliver the game to the public.
-Hopefully the game can pay for itself at this point.
+Once we make sure that everything is working smoothly, we can start adding new features again.
