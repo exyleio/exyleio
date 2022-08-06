@@ -20,7 +20,7 @@ We also prepare as much extensive documentations and planning details as possibl
 
 ## Proof of concept
 
-Hold until: [bevyengine](https://github.com/bevyengine/bevy) 0.8 releases
+Hold until: Godot 4 releases
 
 If a general outline is more or less complete,
 it is time to build the technical foundation.
