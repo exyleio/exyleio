@@ -20,28 +20,25 @@ We also prepare as much extensive documentations and planning details as possibl
 
 ## Proof of concept
 
-Hold until: Godot 4 releases
-
-If a general outline is more or less complete,
+If the general outline of the game is more or less complete,
 it is time to build the technical foundation.
 This is the stage where we build the backbone of the game.
 Basically every code written after this point is only an addition to the code written at this stage of the development.
+This helps us focus on adding new features and squashing bugs instead of spending days contemplating fundamental architectural decisions for days.
 
 ## Alpha dev
 
 Now that we have a solid foundation to work on, it's time to make the game feel like an actual game.
 In this stage, we fine tune the "game feel" until it's just right.
-This includes the control, weapon balance, map layout, server region selection, etc.
+This includes the control, weapon balance, map design, UI structure, etc.
 
 ## Beta dev
 
-In this stage, we work on non-critical and/or nice-to-have features such as clans, friends, nice UI, pretty 3D assets, etc.
-This is the most repetitive and boring part of the development process in terms of technical complexity,
-but in terms of visuals and presentation, it is the most important stage by a long shot.
+Now that the core of the game is complete,
+it's time to work on non-critical and/or nice-to-have features such as clans, friends, skins (custom UI, audio, texture, etc.), pretty 3D assets, etc.
+This is the most repetitive, boring, and time-consuming part of the development, so expect us to stay in this stage for a very long time.
 
 ## Release
-
-Hold until: [webgpu](https://www.w3.org/TR/webgpu/) becomes a web standard. Learn more about it [here](./fragments/webgpu.md).
 
 Although adding shiny new features is awesome, we will have to release the game eventually.
 Once the game has enough feature to not feel incomplete,
