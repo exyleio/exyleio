@@ -9,7 +9,7 @@ this document has everything you would want to know about the game.
 
 ## Where are we?
 
-**Planning phase (we are here)** > Proof of concept > Alpha dev > Beta dev > Release
+**Planning phase (we are here)** > Backbone dev > Alpha dev > Beta dev > Release
 
 check the [roadmap](./roadmap.md) for more information.
 
