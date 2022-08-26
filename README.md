@@ -18,6 +18,6 @@ check the [roadmap](./roadmap.md) for more information.
 All community interactions and announcements happen in our [discord server](https://discord.gg/synPSeuNFK).
 There, you can talk to other players or even participate in development-related discussions.
 
-## Getting started
+## Contribution
 
-If you wish to contribute to the game, head over to the [getting started](./guides/getting-started/common.md) page.
+If you wish to contribute to the game, [get started here](./guides/getting-started/common.md).
