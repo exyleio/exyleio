@@ -35,7 +35,7 @@ decisions.
 Now that we have a solid foundation to work on, it's time to make the game feel like
 an actual game. In this stage, we implement a rough prototype of the core features.
 We will experiment with some wild stuff here because if it fails, we would have only
-lost a small amount of time.
+lost a small amount of time anyway.
 
 ## Beta dev
 

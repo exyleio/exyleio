@@ -2,41 +2,9 @@
 
 ## Introduction
 
-Exyle.io provides many different game modes with different maps, mechanics, and leaderboards.
-Each game mode also has its own rating algorithm and leaderboard to ensure the most objective ranking and match making possible.
-
-## How game modes are arranged
-
-Exyle.io uses the Server-Lobby-Room model to organize plyer activities.
-
-On the highest level, there are the servers which are actual physical hardware
-located on specific location where they can provide the lowest latency experience for the users.
-Within each server, there are different lobbies which correspond to one and only one game mode.
-Finally, there are multiple rooms within each lobby where players can actually join and play the game.
-
-While players normally have to log in to play the game,
-some rooms are allocated as "public room" where non logged-in users playing on browsers can join and play the game too.
-To prevent newbie farming, players can not gain any stats from public rooms.
-
-Here is a simple diagram to help you understand the basic structure.
-
-```
-Region 1 server
-├── Game mode 1 Lobby
-|    ├── Room 1 (public)
-|    ├── Room 2
-|    └── ...
-└── ...
-
-Region 2 server
-├── Game mode 1 Lobby
-|    ├── Room 1 (public)
-|    ├── Room 2
-|    └── ...
-└── ...
-
-...
-```
+Exyle.io provides many different game modes with different maps and mechanics.
+Each game mode also has its own rating algorithm and leaderboard to ensure the
+most objective ranking and match making possible.
 
 ## Tutorial
 
@@ -47,13 +15,6 @@ Region 2 server
 - players can create custom rooms where they can set a password and change the game settings.
 - costs coin to create rooms
 - supporters can create rooms for free
-
-## Rewards
-
-At the end of each round, players are rewarded with coins for their performance and participation.
-And players with the best performance are rewarded with extra coins. This is called special rewards.
-In case two or more players have the same performance, whichever reached the value first will be rewarded.
-One player can receive multiple special rewards.
 
 ## Respawn
 
@@ -78,7 +39,7 @@ Team Death Match is a game mode where two groups of 8 players compete against ea
   - each kill adds 1 point to the team
   - when a player leaves, the points they've earned will be deducted from the team
   - when a player rejoins, and is put into the other team, the points they've earned will be transferred too.
-- rating system: TODO
+- rating system: WIP
 
 ### Solo Death Match
 
@@ -90,7 +51,7 @@ Solo Death Match is a game mode where 8 players compete against each other for t
 
 - players can only change their weapons before (re)spawn.
   Players can preselect which weapon to use on (re)spawn.
-- rating system: TODO
+- rating system: WIP
 
 ### Capture Points
 
@@ -108,26 +69,7 @@ Capture Points is a game mode where two groups of 8 players compete against each
   - green: captured by your team
   - yellow: not captured by any team
   - red: captured by enemy team
-- rating system: TODO
-
-### Bomb Game
-
-Bomb Game is a game mode where two groups of 4 players diffuse and detonate bombs planted across the map.
-
-| Field          | Value                                   |
-| -------------- | --------------------------------------- |
-| Special Reward | kills, damages, and time spent on bombs |
-
-- there are 6 candidates for bomb plantation location of which 3 are selected at random
-  - each bomb can exist in either one of two location
-- minimap
-  - initially, the diffusing team can only see 6 question marks on the map
-  - once a bomb has been found, its position will be shown on the map, removing one question mark.
-  - the detonating team can always see the position of all the bombs
-- how to win
-  - The diffusing team wins if they successfully diffuse all 3 bombs
-  - The defending team wins if at least 1 bomb is not diffused until the end of the match
-- rating system: TODO
+- rating system: WIP
 
 ### Battle Royale
 
@@ -142,7 +84,7 @@ Battle Royale is a game mode where up to 30 players are dropped in a large map a
 - if more than one player is alive until the end of the match, no one is awarded as the winner.
 - there are no default attachments for weapons
 - weapon attachments
-- rating system: TODO
+- rating system: WIP
 
 ### Speedrun
 
@@ -162,7 +104,7 @@ Speedrun is a game mode where players have to navigate from start to finish in t
 
 ### Vehicles only
 
-TODO
+WIP
 
 | Field          | Value      |
 | -------------- | ---------- |
@@ -174,4 +116,8 @@ jet vs jet
 - has a vehicle unique to this game mode: tanks
 - players can only change their vehicle before (re)spawn.
   Players can preselect which vehicle to use on (re)spawn.
-- rating system: TODO
+- rating system: WIP
+
+### Prop hunt
+
+only in custom game modes
