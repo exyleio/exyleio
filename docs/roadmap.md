@@ -40,8 +40,7 @@ lost a small amount of time anyway.
 ## Beta dev
 
 Although adding shiny new features is awesome, we will have to release the game eventually.
-Once the game has enough feature to not feel incomplete, we will stop adding new features for
-a moment, and redirect all of our effort into squashing bugs and polishing existing features.
-This includes cool graphics, nice UI, improved performance, etc. Once we've smooth out all the
-rough edges, we can finally deliver the game to the world. Once we make sure that everything is
-working smoothly, we can start adding new features again.
+Once we feel that the game is ready to be used by the players, we will stop adding new features
+for a moment, and redirect all of our effort into squashing bugs and polishing existing features.
+This includes cool graphics, nice UI, improved performance, etc. Once we've smoothed out all the
+rough edges, we can finally deliver the game to the world.
