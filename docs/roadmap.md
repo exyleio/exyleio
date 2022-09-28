@@ -11,8 +11,6 @@ Following are the four major stages of pre-release development:
 
 ## Planning
 
-**(we are here)**
-
 This is the very first stage of the development process.
 No code written at this stage is expected to survive until the release.
 In this stage, we explore different options and make technical decisions
@@ -21,7 +19,9 @@ related libraries, online infrastructure, hosting provider, code architecture,
 and other stuff of similar nature. We also prepare as much extensive documentations
 and planning details as possible.
 
-## Backbone dev
+## Backbone development
+
+**(we are here)**
 
 If the general outline of the game is more or less complete,
 it is time to build the technological foundation. This is the stage where we build
@@ -30,14 +30,14 @@ an extension of the code written here. This helps us focus on adding new feature
 and squashing bugs instead of spending days contemplating fundamental architectural
 decisions.
 
-## Alpha dev
+## Alpha development
 
 Now that we have a solid foundation to work on, it's time to make the game feel like
 an actual game. In this stage, we implement a rough prototype of the core features.
 We will experiment with some wild stuff here because if it fails, we would have only
 lost a small amount of time anyway.
 
-## Beta dev
+## Beta development
 
 Although adding shiny new features is awesome, we will have to release the game eventually.
 Once we feel that the game is ready to be used by the players, we will stop adding new features

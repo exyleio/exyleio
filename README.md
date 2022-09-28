@@ -10,7 +10,7 @@ financial information, and much more.
 
 ## Where are we?
 
-**Planning phase (we are here)** > Backbone dev > Alpha dev > Beta dev > Release
+Planning phase > **Backbone development phase (we are here)** > Alpha development phase > Beta development phase > Release
 
 check the [roadmap](./docs/roadmap.md) for more information.
 
