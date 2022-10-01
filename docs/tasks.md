@@ -1,7 +1,8 @@
 # Tasks
 
 This is the document where we list tasks we're working on
-as well as their deadlines. You can always check the
+as well as their deadlines in YYYY-MM-DD format (KST).
+You can always check the
 [issues](https://github.com/exyleio/exyleio/issues) for
 other minor stuff we're working on but these are our main
 focus.
