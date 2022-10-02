@@ -1,5 +1,7 @@
 # Exyle.io Documentation
 
+[![discord invite link](https://shields.io/badge/-discord-5865F2?logo=discord&style=for-the-badge&logoColor=white)](https://discord.gg/synPSeuNFK)
+
 ## What is this?
 
 This is the main GitHub page for a simple community-driven
