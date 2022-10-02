@@ -9,10 +9,6 @@ focus.
 
 ## Deadlines
 
-### 2022-10-04
-
-- create skeleton project for [exyleio-client](https://github.com/exyleio/exyleio-client)
-
 ### 2022-10-06
 
 - create skeleton project for [exyleio-master-server](https://github.com/exyleio/exyleio-master-server)
