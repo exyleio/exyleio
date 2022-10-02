@@ -1,6 +1,7 @@
 # Exyle.io Documentation
 
-[![discord invite link](https://shields.io/badge/-discord-5865F2?logo=discord&style=for-the-badge&logoColor=white)](https://discord.gg/synPSeuNFK)
+[![discord invite link](https://shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/synPSeuNFK)
+[![discord invite link](https://img.shields.io/badge/patreon-f96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/developomp)
 
 ## What is this?
 
