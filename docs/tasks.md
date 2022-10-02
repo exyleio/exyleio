@@ -12,16 +12,9 @@ focus.
 ### 2022-10-02
 
 - create skeleton projects and basic setting up docs for the following repositories:
-  - [exyleio-web](https://github.com/exyleio/exyleio-web)
-    - using: SolidJS
-    - docs
-      - https://docs.solidjs.com
-      - https://www.solidjs.com/tutorial/introduction_basics
-      - https://www.solidjs.com/guides/getting-started
+  - ~~[exyleio-web](https://github.com/exyleio/exyleio-web)~~ (done)
   - [exyleio-client](https://github.com/exyleio/exyleio-client)
-    - using: Godot 4.0 beta
   - [exyleio-master-server](https://github.com/exyleio/exyleio-master-server)
-    - Using Golang
 
 ### 2022-10-10
 
