@@ -9,12 +9,13 @@ focus.
 
 ## Deadlines
 
-### 2022-10-02
+### 2022-10-04
 
-- create skeleton projects and basic setting up docs for the following repositories:
-  - ~~[exyleio-web](https://github.com/exyleio/exyleio-web)~~ (done)
-  - [exyleio-client](https://github.com/exyleio/exyleio-client)
-  - [exyleio-master-server](https://github.com/exyleio/exyleio-master-server)
+- create skeleton project for [exyleio-client](https://github.com/exyleio/exyleio-client)
+
+### 2022-10-06
+
+- create skeleton project for [exyleio-master-server](https://github.com/exyleio/exyleio-master-server)
 
 ### 2022-10-10
 
