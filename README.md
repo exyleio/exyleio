@@ -11,8 +11,10 @@
 
 ## What is this?
 
-This is the main GitHub page for a simple community-driven
-competitive online multiplayer fps game: Exyle.io.
+Exyle.io is a simple free community-driven cross-platform
+competitive online multiplayer fps game.
+
+And you're in the main repository
 It contains all information related to the game including its
 design, technical details, guides for contributors and players,
 financial information, and much more.
