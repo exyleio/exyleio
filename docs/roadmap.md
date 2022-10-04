@@ -5,7 +5,8 @@ amount of time and effort. Which is why we have divided the development
 processes into different stages. This makes it much easier for us to manage
 different tasks, and prevents us from falling into the pit of unproductiveness.
 You can track the progress of each stage
-[here](https://github.com/exyleio/exyleio/milestones).
+[here](https://github.com/exyleio/exyleio/milestones), and the current tasks
+we're working on [here](./tasks.md).
 
 Following are the four major stages of pre-release development:
 
