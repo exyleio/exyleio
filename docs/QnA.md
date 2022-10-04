@@ -31,7 +31,7 @@ Read [this](./guides/community-feedback/wont-implement.md).
 
 ## Will you hire developers?
 
-Short answer: No.<br/>
+Short answer: No.<br />
 Long answer:
 
 - I am not even close to earning minimum wage let alone enough to hire even a part-time developer
@@ -40,3 +40,9 @@ Long answer:
 - I am bad at managing people
 - anyone can come in and contribute code without permission anyway
 - the game engine Exyle.io is using (Godot 4) is relatively unknown, it's difficult to find qualified developers in the first place
+
+## Will you create a subreddit/twitter account/etc?
+
+Short answer: No.<br />
+Long answer: I don't wanna waste time and cognitive energy on
+platforms I'm not familiar with.
