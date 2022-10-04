@@ -24,7 +24,8 @@ repository.
 To contribute to this project, you will need a strong knowledge of
 web frontend technologies, namely JavaScript, TypeScript, CSS, HTML,
 JSX, and TSX. As well as a bit of networking/browser fundamentals such
-as the HTTP protocol, localStorage API, and polyfills.
+as the HTTP protocol, localStorage API, and polyfills. You can lean all
+that and more in the [MDN](https://developer.mozilla.org).
 
 ### SolidJS
 
