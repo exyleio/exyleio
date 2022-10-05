@@ -8,7 +8,7 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### 2022-10-06
+### 2022-10-08
 
 - [Create a skeleton project of the Exyle.io API](https://github.com/exyleio/exyleio/issues/58)
 
