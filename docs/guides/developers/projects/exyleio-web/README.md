@@ -3,7 +3,7 @@
 ## Introduction
 
 This is the documentation for the
-[exyleio/exyleio-web](https://github.com/exyleio/exyleio-web)
+[exyleio-web](https://github.com/exyleio/exyleio-web)
 repository.
 
 ## Setting up

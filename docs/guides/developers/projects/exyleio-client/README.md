@@ -3,7 +3,7 @@
 ## Introduction
 
 This is the documentation for the
-[exyleio/exyleio-client](https://github.com/exyleio/exyleio-client)
+[exyleio-client](https://github.com/exyleio/exyleio-client)
 repository.
 
 ## Setting up
