@@ -8,11 +8,11 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### 2022-10-22
+### 2022-11-02
 
 - [Add quik framework](https://github.com/exyleio/exyleio/issues/57)
 
-### 2022-10-23
+### 2022-11-15
 
 - [finish Exyle.io infrastructure plan](https://github.com/exyleio/exyleio/issues/15)
 
