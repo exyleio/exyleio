@@ -1,16 +1,15 @@
 # Supporter plan
 
 Supporter in Exyle.io is analogous to premium memberships in other games.
-A payment of $2 on patreon will give you or more will automatically .
+Once a player links their patreon account to their game account and
+donates more than or equal to $2/mo, they'll automatically get
+supporter-exclusive perks.
 
 ## Perks
 
-- profile badge
+- permanent supporter profile badge
 - discord role
 - Better chance of getting rarer items from loot-boxes
 - priority when it comes to user feedback
-- listed in-game supporter thank-you list
-  - Sections
-    - Current supporters
-    - Past supporters
-    <!-- - Gold supporters (7+ USD/mo) -->
+- priority in search results
+- store up to 150MB of skin files in the cloud
