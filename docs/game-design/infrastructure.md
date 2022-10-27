@@ -112,7 +112,7 @@ flowchart LR
 
 - TODO
 
-## API
+## Exyle.io API
 
 The Exyle.io API is an [GraphQL](https://graphql.org)-based interface
 between the data and the users. It acts as a middleman that safely
