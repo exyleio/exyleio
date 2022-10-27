@@ -78,3 +78,46 @@ end
 ```
 
 </details>
+
+## Discord
+
+- TODO
+
+## Firebase
+
+- TODO
+
+## User
+
+- TODO
+
+## AWS
+
+- TODO
+
+## Nginx
+
+- TODO
+
+## GameLift fleet
+
+- TODO
+
+## Master server
+
+- TODO
+
+## API
+
+The Exyle.io API is an [GraphQL](https://graphql.org)-based interface
+between the data and the users. It acts as a middleman that safely
+reads from and writes to the database so no one can view or modify the
+it without authorization.
+
+## Status site
+
+- TODO
+
+## Storage
+
+- TODO
