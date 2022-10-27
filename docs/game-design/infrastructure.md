@@ -1,5 +1,24 @@
 # Infrastructure
 
+## Introduction
+
+The Exyle.io online infrastructure is a complex intertwined
+collection of programs and services that powers the entire
+game by connecting users with each other and managing their data.
+On the surface, this looks simple enough, but there are many technical
+challenges people are not usually aware of such as seamlessly scaling
+the servers up and down depending on the load, protecting the servers
+from hackers, managing backups and recovering from one when needed,
+making the services crash-tolerant, efficiently organizing all the user
+data, and of course, balancing everything for the minimum operation cost.
+And that's just the tip of the iceberg.
+
+In this document, we'll go over the surface level information about
+the entire system with the goal of having a better understanding of how
+things fit with each other.
+
+Below is a simplified diagram of the said system.
+
 ![infrastructure plan](../../img/infrastructure.png)
 
 <details>
