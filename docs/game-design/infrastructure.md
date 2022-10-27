@@ -100,15 +100,15 @@ flowchart LR
 
 - TODO
 
-## Nginx
-
-- TODO
-
 ## GameLift fleet
 
 - TODO
 
 ## Master server
+
+- TODO
+
+## Nginx
 
 - TODO
 
@@ -119,10 +119,10 @@ between the data and the users. It acts as a middleman that safely
 reads from and writes to the database so no one can view or modify the
 it without authorization.
 
-## Status site
+## Redis Database
 
 - TODO
 
-## Storage
+## Long-term storage
 
 - TODO
