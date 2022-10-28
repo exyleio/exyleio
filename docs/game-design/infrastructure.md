@@ -121,7 +121,17 @@ it without authorization.
 
 ## Redis Database
 
-- TODO
+Database is defined as a collection of data relevant to the operation of
+a service. Behind the scene, we use [Redis](https://redis.com) which is a
+in-memory key-value store as opposed to the more traditional relational
+table database. We made this choice not only because redis has a blazingly
+fast read/write speed, but also because it has many useful modern features
+such as the ability to easily rank players based on certain statistics which
+is made possible thanks to its
+[sorted sets](https://redis.io/docs/data-types/sorted-sets) data type.
+However, since redis is volatile by default, it requires extra configuration
+to have [persistency](https://redis.io/docs/manual/persistence).
+In our case, we're only using AOF.
 
 ## Long-term storage
 
