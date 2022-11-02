@@ -120,9 +120,9 @@ flowchart LR
 
 ## Exyle.io API
 
-The Exyle.io API is an [GraphQL](https://graphql.org)-based interface
+The Exyle.io API is a [GraphQL](https://graphql.org)-based interface
 between the data and the users. It acts as a middleman that safely
-reads from and writes to the database so no one can view or modify the
+reads from and writes to the database so no one can view or modify
 it without authorization.
 
 ## Redis Database
