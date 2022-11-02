@@ -58,6 +58,14 @@ providing servers for Exyle.io. We use:
 Exyle.io to manage sessions and user data. Read their
 [Documentations](https://redis.io/docs) to learn more.
 
+### GraphQL
+
+GraphQL is a query language developed to fix the under-fetching and
+over-fetching problem with the traditional RESTful API pattern.
+It is the only protocol used by the Exyle.io API.
+You can learn more about GraphQL over at
+[howtographql.com](https://www.howtographql.com/).
+
 ### Rocket
 
 [Rocket](https://github.com/SergioBenitez/Rocket) is a web framework
