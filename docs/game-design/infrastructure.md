@@ -39,8 +39,14 @@ flowchart LR
     subgraph discord[Discord]
         discord-api[Discord API]
     end
-    discord-api --- discord-bot
     discord-api --- desktop-client
+    discord-api --- discord-bot
+    discord-bot --- exyleio-api
+
+    subgraph patreon[Patreon]
+        patreon-api[Patreon API]
+    end
+    patreon-api --- exyleio-api
 
     subgraph user[User]
         browser[Web Browser]
@@ -63,7 +69,7 @@ flowchart LR
                 discord-bot[Discord Bot]
                 nginx-proxy[ \n\n\n NGINX \n reverse \n proxy \n\n\n\n]
 
-                subgraph api[Exyle.io API]
+                subgraph exyleio-api[Exyle.io API]
                     direction LR
                     api-stable[stable version]
                     api-dev[development version]
@@ -75,8 +81,8 @@ flowchart LR
                     long-term-storage[(Long-term Storage)]
                 end
             end
-            nginx-proxy --- api
-            api --- data
+            nginx-proxy --- exyleio-api
+            exyleio-api --- data
         end
         class aws_padding aws_padding
     end
