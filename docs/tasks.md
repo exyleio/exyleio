@@ -8,10 +8,6 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### 2022-11-05
-
-- [Add GraphQL support to the API](https://github.com/exyleio/exyleio/issues/67)
-
 ### 2022-11-15
 
 - [finish Exyle.io infrastructure plan](https://github.com/exyleio/exyleio/issues/15)
