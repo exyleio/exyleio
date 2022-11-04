@@ -10,22 +10,29 @@ repository.
 
 1. [Install rustup](https://www.rust-lang.org/tools/install)
 
-   - make sure you're using the **nightly version** of rust.
-     It's a good idea to run this command every once in a while
-     to keep the rust toolchain up to date.
+2. Set the rust toolchain version to nightly
 
    ```
    rustup default nightly
    ```
 
-2. Build / Launch using cargo commands
-
-   ```
-   cargo build
-   ```
+3. Run the server
 
    ```
    cargo run
+   ```
+
+4. Build for production
+
+   ```
+   cargo build --release
+   ```
+
+5. It is also a good idea to keep the rust toolchain up to date
+   by using the following command
+
+   ```
+   rustup update
    ```
 
 ## Learning
