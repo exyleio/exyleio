@@ -141,4 +141,11 @@ In our case, we're only using AOF.
 
 ## Long-term storage
 
-- TODO
+It is impractical to store large files that do not get many read/write requests
+in the database especially since redis puts all its data in the memory. Because
+of that, files such as skin assets, match replay files, and server logs are
+stored separately in a special place called the
+[object storage](https://aws.amazon.com/s3). It is a slow, but extremely reliant
+and cost-effective solution for archiving data for long periods of time. For
+comparison, [elastic block storage (EBS)](https://aws.amazon.com/ebs) is
+available 99.999% of the time as supposed to 99.999999999% in S3.
