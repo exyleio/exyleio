@@ -92,7 +92,11 @@ flowchart LR
 
 ## Discord
 
-- TODO
+Discord offers numerous tools developers can work with to create epic
+features such as role syncing, chat bridge, rich presence, game
+invitation etc. Though we try to stay as technologically independent
+as possible, we are also constantly looking out for new ways to
+maximize community integration.
 
 ## Firebase
 
