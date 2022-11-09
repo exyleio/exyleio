@@ -100,7 +100,9 @@ maximize community integration.
 
 ## Firebase
 
-- TODO
+Whenever we need a website that users can open using their web browser,
+we use [Google firebase](https://firebase.google.com). We made this
+choice because it is free, reliant, fast, and easy to work with.
 
 ## User
 
