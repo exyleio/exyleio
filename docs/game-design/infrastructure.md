@@ -118,7 +118,10 @@ choice because it is free, reliant, fast, and easy to work with.
 
 ## Master server
 
-- TODO
+Located in Northern Virginia (us-east-1), the master server is
+a t3a.micro EC2 instance responsible for the orchestration of
+region-specific game servers, databases, and various external
+services.
 
 ## Nginx
 
