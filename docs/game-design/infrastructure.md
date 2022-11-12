@@ -122,7 +122,11 @@ choice because it is free, reliant, fast, and easy to work with.
 
 ## Nginx
 
-- TODO
+Since shutting down a server and relaunching an updated version
+will result in some downtime, an NGINX reverse proxy is used to
+seamlessly switch between different API versions. This also
+removes the need to give the server root permission to access
+system ports.
 
 ## Exyle.io API
 
