@@ -104,13 +104,25 @@ Whenever we need a website that users can open using their web browser,
 we use [Google firebase](https://firebase.google.com). We made this
 choice because it is free, reliant, fast, and easy to work with.
 
-## User
-
-- TODO
-
 ## AWS
 
-- TODO
+Once a developer build a program, they need a place to run them.
+Of course, it is possible for them to use their computer, but that
+comes at the cost of security, stability, and performance. Because
+of that, every component of our cloud infrastructure are hosted by
+Amazon in their [AWS](https://aws.amazon.com) platform. We
+specifically chose this provider mainly because they provide a simple
+way to manage game servers
+([Amazon GameLift](https://aws.amazon.com/gamelift)), but they also
+have the best cost to performance ratio when it comes to the level of
+performance we need from our servers. They also happen to be the most
+popular cloud service provider in the world, so there are plenty of
+learning materials to train future developers.
+
+Related resources:
+
+- [server distribution plan](./server-distribution-plan.md)
+- [List of available regions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 
 ## GameLift fleet
 
