@@ -123,10 +123,23 @@ Related resources:
 
 - [server distribution plan](./server-distribution-plan.md)
 - [List of available regions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+- [EC2 instance types](https://aws.amazon.com/ko/ec2/instance-types)
+- [pricing](https://aws.amazon.com/ko/gamelift/pricing)
 
-## GameLift fleet
+### Game servers
 
-- TODO
+Game servers use one of the following instance types.
+They all have at least 8GB RAM and 2 vCPU.
+
+| Instance Type | vCPU | threads per core\* | RAN (GB) |           CPU model           |                                       benchmark (www.cpubenchmark.net)                                        |
+| :-----------: | :--: | :----------------: | :------: | :---------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+|   m5.large    |  2   |                    |    8     |     intel 8175M / 8259CL      | [26659](https://www.cpubenchmark.net/cpu.php?id=3311) / [33279](https://www.cpubenchmark.net/cpu.php?id=3671) |
+|   m5a.large   |  2   |                    |    8     |         AMD EPYC 7571         |                             [27445](https://www.cpubenchmark.net/cpu.php?id=3543)                             |
+|   m4.large    |  2   |                    |    8     | intel E5-2686 v4 / E5-2676 v3 | [16745](https://www.cpubenchmark.net/cpu.php?id=2870) / [13498](https://www.cpubenchmark.net/cpu.php?id=2643) |
+
+\*: [threads per core](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supported-instances-values.html)
+
+
 
 ## Master server
 
