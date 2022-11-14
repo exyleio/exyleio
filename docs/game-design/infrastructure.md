@@ -131,7 +131,7 @@ Related resources:
 Game servers use one of the following instance types.
 They all have at least 8GB RAM and 2 vCPU.
 
-| Instance Type | vCPU | threads per core\* | RAN (GB) |           CPU model           |                                       benchmark (www.cpubenchmark.net)                                        |
+| Instance Type | vCPU | threads per core\* | RAM (GB) |           CPU model           |                                       benchmark (www.cpubenchmark.net)                                        |
 | :-----------: | :--: | :----------------: | :------: | :---------------------------: | :-----------------------------------------------------------------------------------------------------------: |
 |   m5.large    |  2   |                    |    8     |     intel 8175M / 8259CL      | [26659](https://www.cpubenchmark.net/cpu.php?id=3311) / [33279](https://www.cpubenchmark.net/cpu.php?id=3671) |
 |   m5a.large   |  2   |                    |    8     |         AMD EPYC 7571         |                             [27445](https://www.cpubenchmark.net/cpu.php?id=3543)                             |
