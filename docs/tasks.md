@@ -8,9 +8,9 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### 2022-11-15
+### 2022-11-19
 
-- [finish Exyle.io infrastructure plan](https://github.com/exyleio/exyleio/issues/15)
+- [Finish API spec](https://github.com/exyleio/exyleio/issues/65)
 
 ### Soon™
 
