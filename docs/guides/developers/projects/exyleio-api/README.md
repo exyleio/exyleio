@@ -17,8 +17,11 @@ To contribute to this project, you will need:
 
 ### Learning material
 
-- [Go Tutorial (unofficial)](https://gobyexample.com)
-- [Redis Documentation](https://redis.io/docs)
-- [Go redis client Documentation](https://redis.uptrace.dev)
-- [GQLGen Documentation](https://gqlgen.com)
-- [GraphQL Tutorial](https://www.howtographql.com)
+- Core
+  - ["Go in 100 Seconds" (video)](https://www.youtube.com/watch?v=446E-r0rXHI)
+  - [Go Tutorial](https://gobyexample.com)
+  - [Redis Documentation](https://redis.io/docs)
+  - [GraphQL Tutorial](https://www.howtographql.com)
+- Libraries
+  - [Go redis client Documentation](https://redis.uptrace.dev)
+  - [GQLGen Documentation](https://gqlgen.com)
