@@ -139,8 +139,6 @@ They all have at least 8GB RAM and 2 vCPU.
 
 \*: [threads per core](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supported-instances-values.html)
 
-
-
 ## Master server
 
 Located in Northern Virginia (us-east-1), the master server is
