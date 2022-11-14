@@ -15,13 +15,10 @@ To contribute to this project, you will need:
 - some level of familiarity with databases (especially redis DB)
 - basic [Go](https://go.dev) programming skill
 
-### Where to learn
+### Learning material
 
-- The Go programming language
-  - https://gobyexample.com
-- Redis database
-  - https://redis.io/docs
-- GQLGen
-  - https://gqlgen.com
-- GraphQL API query language
-  - https://www.howtographql.com
+- [Go Tutorial (unofficial)](https://gobyexample.com)
+- [Redis Documentation](https://redis.io/docs)
+- [Go redis client Documentation](https://redis.uptrace.dev)
+- [GQLGen Documentation](https://gqlgen.com)
+- [GraphQL Tutorial](https://www.howtographql.com)
