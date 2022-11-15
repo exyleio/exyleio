@@ -10,6 +10,10 @@ YYYY-MM-DD format (KST).
 
 ### 2022-11-19
 
+- [Rewrite API](https://github.com/exyleio/exyleio/issues/77)
+
+### 2022-11-26
+
 - [Finish API spec](https://github.com/exyleio/exyleio/issues/65)
 
 ### Soon™
