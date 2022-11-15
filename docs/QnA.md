@@ -25,6 +25,14 @@ my very first game dev experience (at least on this scale), so expect a bumpy ri
 
 Check the [roadmap](./roadmap.md) for more information about the future plans for the game.
 
+## What are the developers working on?
+
+The developers can work on any of the opened
+[issues](https://github.com/exyleio/exyleio/issues) and submit their code via
+[pull request](https://github.com/exyleio/exyleio/pulls). You can also take a
+look at [tasks](https://github.com/exyleio/exyleio/blob/master/docs/tasks.md)
+where we list goals with their deadlines.
+
 ## Will you implement X?
 
 Read [this](./guides/community-feedback/wont-implement.md).
