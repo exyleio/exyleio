@@ -8,7 +8,7 @@ game by connecting users with each other and managing their data.
 On the surface, this looks simple enough, but there are many technical
 challenges people are not usually aware of such as seamlessly scaling
 the servers up and down depending on the load, protecting the servers
-from hackers, managing backups and recovering from one when needed,
+from cyber attacks, managing backups and recovering from one when needed,
 making the services crash-tolerant, efficiently organizing all the user
 data, and of course, balancing everything for the minimum operation cost.
 And that's just the tip of the iceberg.
@@ -92,17 +92,17 @@ flowchart LR
 
 ## Discord
 
-Discord offers numerous tools developers can work with to create epic
+Discord offers various tools developers can work with to create epic
 features such as role syncing, chat bridge, rich presence, game
-invitation etc. Though we try to stay as technologically independent
-as possible, we are also constantly looking out for new ways to
-maximize community integration.
+invitation, etc. This helps alleviate the boundary between the community
+(Discord) and the game.
 
 ## Firebase
 
 Whenever we need a website that users can open using their web browser,
 we use [Google firebase](https://firebase.google.com). We made this
-choice because it is free, reliant, fast, and easy to work with.
+choice because it is free, reliant, fast, and easy to work with which
+is not a combination you see every day.
 
 ## AWS
 
