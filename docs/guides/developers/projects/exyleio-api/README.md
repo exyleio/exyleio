@@ -6,6 +6,19 @@ This is the documentation for the
 [exyleio-api](https://github.com/exyleio/exyleio-api)
 repository.
 
+## Setting up
+
+1. Install Go
+   - [Instructions](https://go.dev/doc/install)
+2. Run server
+   ```
+   go run ./server.go
+   ```
+3. Build for production
+   ```
+   go build
+   ```
+
 ## Learning
 
 To contribute to this project, you will need:
