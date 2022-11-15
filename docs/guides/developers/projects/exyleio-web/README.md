@@ -8,57 +8,48 @@ repository.
 
 ## Setting up
 
-1. Install [Node.js](https://nodejs.org) (v16) and
-   [yarn](https://yarnpkg.com)
+1. Install [Node.js](https://nodejs.org) (v16) and [yarn](https://yarnpkg.com)
 2. Install dependencies
    ```
    yarn install
    ```
 3. Start a local server
    ```
-   yarn start
+   yarn dev
+   ```
+   Or start the server and open the app in a new browser tab
+   ```
+   yarn dev -- --open
+   ```
+4. Build for production
+   ```
+   yarn build
+   ```
+   You can preview the production build with
+   ```
+   yarn preview
    ```
 
 ## Learning
 
-To contribute to this project, you will need a strong knowledge of
-web frontend technologies, namely JavaScript, TypeScript, CSS, HTML,
-JSX, and TSX. As well as a bit of networking/browser fundamentals such
-as the HTTP protocol, localStorage API, and polyfills. You can lean all
-that and more in the [MDN](https://developer.mozilla.org).
+Minimum required skills to contribute to this project:
 
-### SolidJS
+- Fundamental web skills
+  - JavaScript
+  - CSS
+  - HTML
+- NodeJS
+  - yarn CLI
+- Typescript
+- Svelte
+  - SvelteKit
+- TailwindCSS
 
-[SolidJS](https://www.solidjs.com) is a framework extremely similar
-to [ReactJS](https://reactjs.org), the most widely used web frontend
-framework in the world.
+### Learning material
 
-- [Tutorial](https://www.solidjs.com/tutorial)
-- [Guides](https://www.solidjs.com/guides)
-- [Examples](https://www.solidjs.com/examples/counter)
-- [API Reference](https://www.solidjs.com/docs/latest)
-- [new documentation (WIP)](https://docs.solidjs.com)
-  - contains everything mentioned above but is still incomplete
-
-### Vite
-
-[Vite](https://github.com/vitejs/vite) is a tool used to locally
-serve a test version and to create optimized build for production.
-Though it is rare that you will ever have to touch vite config
-files, it is helpful to know what we're using when we're trying to
-track down and squash bugs.
-
-### Styling
-
-#### Styled-components
-
-[styled components](https://github.com/styled-components/styled-components)
-is a library used to integrate css stylesheets directly in the
-javascript files. SolidJS uses its own version which you can
-learn more about it in their
-[GitHub repository](https://github.com/solidjs/solid-styled-components).
-
-#### Tailwind
-
-We use [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) to create
-a consistent look throughout our websites and to reduce CSS length.
+- [MDN (JavaScript, CSS, HTML, Web API, etc)](https://developer.mozilla.org/docs/Web)
+- [TypeScript Tutorial](https://www.typescripttutorial.net)
+- [Svelte Tutorial](https://svelte.dev/tutorial)
+- [Svelte Documentation](https://svelte.dev/docs)
+- [Svelte Kit Documentation](https://kit.svelte.dev/docs)
+- [TailwindCSS](https://tailwindcss.com/docs)
