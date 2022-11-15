@@ -47,9 +47,14 @@ Minimum required skills to contribute to this project:
 
 ### Learning material
 
-- [MDN (JavaScript, CSS, HTML, Web API, etc)](https://developer.mozilla.org/docs/Web)
-- [TypeScript Tutorial](https://www.typescripttutorial.net)
-- [Svelte Tutorial](https://svelte.dev/tutorial)
-- [Svelte Documentation](https://svelte.dev/docs)
-- [Svelte Kit Documentation](https://kit.svelte.dev/docs)
-- [TailwindCSS](https://tailwindcss.com/docs)
+- Fundamentals
+  - [MDN (JavaScript, CSS, HTML, Web API, etc)](https://developer.mozilla.org/docs/Web)
+- Svelte
+  - [Svelte Tutorial](https://svelte.dev/tutorial)
+  - [Svelte Documentation](https://svelte.dev/docs)
+  - [Svelte Kit Documentation](https://kit.svelte.dev/docs)
+- Styling
+  - [TailwindCSS](https://tailwindcss.com/docs)
+  - [SASS Tutorial](https://sass-lang.com/guide)
+- Etc
+  - [TypeScript Tutorial](https://www.typescripttutorial.net)
