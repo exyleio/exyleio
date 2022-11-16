@@ -6,35 +6,34 @@ This is the documentation for the
 [exyleio-api](https://github.com/exyleio/exyleio-api)
 repository.
 
-## Setting up
+## Getting started
 
-1. Install Go
-   - [Instructions](https://go.dev/doc/install)
-2. Run server
+1. Install bun
+   - [Instructions](https://bun.sh)
+2. Start server
    ```
-   go run ./server.go
+   bun run src/server.ts
    ```
-3. Build for production
-   ```
-   go build
+3. Open the server in your browser and send a query
+   ```graphql
+   query {
+     ping
+   }
    ```
 
 ## Learning
 
 To contribute to this project, you will need:
 
-- a solid understanding of web backend fundamentals
-  such as the different networking layers and their respective protocols
+- a solid understanding of web backend fundamentals such as the OSI model
 - some level of familiarity with databases (especially redis DB)
-- basic [Go](https://go.dev) programming skill
+- confidence in Javascript/Typescript programming
 
 ### Learning material
 
-- Core
-  - ["Go in 100 Seconds" (video)](https://www.youtube.com/watch?v=446E-r0rXHI)
-  - [Go Tutorial](https://gobyexample.com)
-  - [Redis Documentation](https://redis.io/docs)
+- Fundamentals
   - [GraphQL Tutorial](https://www.howtographql.com)
+  - [Redis Documentation](https://redis.io/docs)
 - Libraries
-  - [Go redis client Documentation](https://redis.uptrace.dev)
-  - [GQLGen Documentation](https://gqlgen.com)
+  - [GraphQL Yoga server](https://the-guild.dev/graphql/yoga-server)
+  - [node-redis](https://github.com/redis/node-redis)
