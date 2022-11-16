@@ -32,14 +32,14 @@ flowchart LR
         direction LR
         web-client["Web Client\n(exyle.io)"]
         website["Website\n(web.exyle.io)"]
-        status-site["Status site\n(web.exyle.io)"]
+        status-site["Status site\n(status.exyle.io)"]
     end
     firebase --- browser
 
     subgraph discord[Discord]
         discord-api[Discord API]
     end
-    discord-api --- desktop-client
+    discord-api --- desktop
     discord-api --- discord-bot
     discord-bot --- exyleio-api
 
@@ -50,7 +50,7 @@ flowchart LR
 
     subgraph user[User]
         browser[Web Browser]
-        desktop-client[Desktop Client]
+        desktop[Desktop]
     end
     user --- nginx-proxy
     user --- aws-gamelift-fleet
