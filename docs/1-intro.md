@@ -20,7 +20,7 @@ disclose financial information, and much more.
 
 Planning phase > **Backbone development phase (we are here)** > Alpha development phase > Beta development phase > Release
 
-check the [roadmap](./status/roadmap) for more information.
+check the [roadmap](./dev-status/roadmap) for more information.
 
 ## Community
 
@@ -32,4 +32,4 @@ in development-related discussions.
 ## Contribution
 
 If you wish to contribute to the game,
-[get started here](./guides/common).
+[get started here](./contribution-guides/common).
