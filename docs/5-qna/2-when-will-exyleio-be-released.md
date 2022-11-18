@@ -14,5 +14,5 @@ personal issues. Not to mention that coming up with a reliable, robust, secure,
 and scalable infrastructure design is difficult and time consuming. Plus, this is
 my very first game dev experience (at least on this scale), so expect a bumpy ride.
 
-Check the [roadmap](./status/roadmap) for more information about the future
+Check the [roadmap](/docs/status/roadmap) for more information about the future
 plans for the game.

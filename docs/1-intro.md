@@ -32,4 +32,4 @@ in development-related discussions.
 ## Contribution
 
 If you wish to contribute to the game,
-[get started here](./guides).
+[get started here](./guides/common).
