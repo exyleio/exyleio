@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Tasks
 
 Tracking tasks with [issues](https://github.com/exyleio/exyleio/issues)

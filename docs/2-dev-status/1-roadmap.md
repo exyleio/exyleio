@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Exyle.io Roadmap
 
 Game development is no easy task. Making a quality game takes a surprising

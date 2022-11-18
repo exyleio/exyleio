@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Introduction
 
 [![discord badge](https://shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/synPSeuNFK)
