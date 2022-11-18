@@ -1,3 +1,0 @@
-# Server Distribution Plan
-
-- TODO
