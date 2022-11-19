@@ -8,4 +8,7 @@ Date&Time is in UTC (YYYY-MM-DD)
   server
 - 2022-09-28 - Out of [planning phase](./roadmap#planning) and entered [backbone
   development phase](./roadmap#backbone-development)
-- Planned - Buy the [exyle.io](https://exyle.io) domain
+- Planned
+  - 2023-10-10 - lead developer developomp's Military service begins
+  - 2024-09-XX - discharged from military duty
+  - Buy the [exyle.io](https://exyle.io) domain
