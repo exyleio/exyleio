@@ -1,6 +1,19 @@
-# Weapons
+# Overview
 
-## Weapons
+## Introduction
+
+Each weapons are tactically distinct and has properties that make it suitable
+for certain types of situations.
+
+- Players have 375 HP
+- Head shot deals double damage
+- All players have 4 options to deal damage: Primary weapon, Secondary weapon,
+  sidearm, and melee
+- Weapon swap delay is fixed at 0.6 second
+- Game-mode-specific information can be found in the
+  [game-modes document](./game-modes).
+
+## Guns
 
 |          Weapon | Base Player Damage per bullet | Vehicle Damage | Recoil | Fire cooldown (seconds) | Reload duration (seconds) | Damage falloff | Clip size | Walk speed | Base Swing | Jump Swing | [Fire type\*](#full-auto-vs-semi-auto) | Head penetration | hitscan distance | bullet velocity | BR Ammo type | Default scope | Purpose                      |
 | --------------: | :---------------------------: | :------------: | :----: | :---------------------: | :-----------------------: | :------------: | :-------: | :--------: | :--------: | :--------: | :------------------------------------: | :--------------: | :--------------: | :-------------: | :----------: | :-----------: | :--------------------------- |
