@@ -1,3 +1,8 @@
 {
-  "recommendations": ["stkb.rewrap"]
+  "recommendations": [
+    "stkb.rewrap",
+    "esbenp.prettier-vscode",
+    "bierner.markdown-mermaid",
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+  ]
 }

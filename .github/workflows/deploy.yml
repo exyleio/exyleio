@@ -1,0 +1,68 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - issue-84-docs-site # todo: remove on merge
+    paths-ignore:
+      - "README.md"
+      - "tsconfig.json"
+      - ".prettierrc"
+      - ".gitignore"
+      - ".vscode/**"
+
+jobs:
+  build:
+    if: ${{ github.repository_owner == 'exyleio' }}
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: yarn
+          cache-dependency-path: yarn.lock
+      - name: Install dependencies and Build
+        run: yarn install && yarn build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: build
+
+  deploy:
+    if: ${{ github.repository_owner == 'exyleio' }}
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: build
+          path: build
+      - name: Set target
+        uses: w9jds/firebase-action@master
+        with:
+          args: use exyleio
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+      - name: Apply target
+        uses: w9jds/firebase-action@master
+        with:
+          args: target:apply hosting stable exyleio-docs
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting:stable
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
