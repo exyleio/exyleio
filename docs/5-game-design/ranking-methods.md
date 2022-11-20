@@ -11,9 +11,10 @@ better performance and accuracy.
 
 ## Simple time comparison
 
-For game modes such as [Speedrun](./game-modes/speedrun) and
-[Prop hunt](./game-modes/prop-hunt), a simple time comparison algorithm is
-used to rank the players.
+For game modes such as
+[Speedrun](/docs/game-design/game-modes/standard/speedrun) and
+[Prop hunt](/docs/game-design/game-modes/special/prop-hunt), a simple time
+comparison algorithm is used to rank the players.
 
 ## Why not this?
 

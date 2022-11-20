@@ -11,7 +11,7 @@ for certain types of situations.
   sidearm, and melee
 - Weapon swap delay is fixed at 0.6 second
 - Game-mode-specific information can be found in the
-  [game-modes document](./game-modes).
+  [game-modes document](../game-modes/common).
 
 ## Guns
 
