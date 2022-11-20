@@ -1,9 +1,9 @@
-# Exyle.io Game Client Documentation
+# Exyle.io Game Documentation
 
 ## Introduction
 
 This is the documentation for the
-[exyleio-game-client](https://github.com/exyleio/exyleio-game-client)
+[exyleio-game](https://github.com/exyleio/exyleio-game)
 repository.
 
 ## Getting started
