@@ -8,11 +8,11 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### 2022-11-26
+### Unknown
 
-- [Finish API spec](https://github.com/exyleio/exyleio/issues/65)
+- [Containerize Projects](https://github.com/exyleio/exyleio/issues/86)
+  - duration: 2~3 months expected due to finals
 
-### Soon™
+### Siib™
 
-- WB rant vid
-- solve world hunger
+- video: War Brokers rant video
