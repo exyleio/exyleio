@@ -5,18 +5,20 @@
 
 ## What is this?
 
-Exyle.io is a simple free community-driven cross-platform
-competitive online multiplayer fps game.
+What you're looking at is the documentation for the game Exyle.io. Its purpose
+is to disclose information, serve as a guide for developers, answer questions
+users might have, and much more. It includes things such as
+[financial information](/docs/management/finance/financial-plan),
+[contribution guides](/docs/contribution-guides/common), and
+[online infrastructure](/docs/game-design/online-infrastructure/infrastructure).
 
-You are in the main repository that's used to store
-documentations and guides, organize community feedbacks and tasks,
-disclose financial information, and much more.
+## Where do I begin?
 
-## Where are we?
-
-Planning phase > **Backbone development phase (we are here)** > Alpha development phase > Beta development phase > Release
-
-check the [roadmap](./dev-status/roadmap) for more information.
+- [I want to see the development progress](/docs/dev-status/roadmap)
+- [I want to contribute to the game](/docs/contribution-guides/common)
+- [I want to know more about the game design](/docs/game-design/overview)
+- [I want to know how the game is managed](/docs/management/core-principles)
+- [I want to answer some questions](/docs/qna/asking-questions)
 
 ## Community
 
@@ -24,8 +26,3 @@ All community interactions and announcements happen in our
 [discord server](https://discord.gg/synPSeuNFK).
 There, you can talk to other players or even participate
 in development-related discussions.
-
-## Contribution
-
-If you wish to contribute to the game,
-[get started here](./contribution-guides/common).
