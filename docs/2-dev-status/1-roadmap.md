@@ -1,4 +1,6 @@
-# Exyle.io Roadmap
+# Exyle.io Development Roadmap
+
+## Overview
 
 Game development is no easy task. Making a quality game takes a surprising
 amount of time and effort. Which is why we have divided the development
@@ -9,6 +11,12 @@ You can track the progress of each stage
 we're working on [here](./tasks).
 
 Following are the four major stages of pre-release development:
+
+1. Planning phase
+2. \> (we are here) < Backbone development phase
+3. Alpha development phase
+4. Beta development phase
+5. Release
 
 ## Planning
 
@@ -21,8 +29,6 @@ and other stuff of similar nature. We also prepare as much extensive documentati
 and planning details as possible.
 
 ## Backbone development
-
-**(we are here)**
 
 If the general outline of the game is more or less complete,
 it is time to build the technological foundation. This is the stage where we build
