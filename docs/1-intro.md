@@ -17,7 +17,8 @@ users might have, and much more. It includes things such as
 - [I want to see the development progress](/docs/dev-status/roadmap)
 - [I want to contribute to the game](/docs/contribution-guides/common)
 - [I want to know more about the game design](/docs/game-design/overview)
-- [I want to know how the game is managed](/docs/management/core-principles)
+- [I want to know how the game is
+  managed](/docs/management/core-principles/overview)
 - [I want to answer some questions](/docs/qna/asking-questions)
 
 ## Community
