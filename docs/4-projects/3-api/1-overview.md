@@ -7,12 +7,17 @@ This is the documentation for the
 
 ## Getting started
 
-1. [Install bun](https://bun.sh)
-2. Start server locally
+1. Install docker and docker compose
+2. Clone the repository
    ```
-   bun run src/server.ts
+   git clone https://github.com/exyleio/exyleio-api.git
    ```
-3. Open the server in your browser and test it by sending a query
+3. Start a test server locally
+   ```
+   docker compose up
+   ```
+4. Open the server in your browser and test it by sending a query. URL will be
+   provided as you start the server.
    ```graphql
    query {
      ping
