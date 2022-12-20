@@ -16,27 +16,34 @@ This is the documentation for the
    ```
    docker compose up
    ```
-4. Open the server in your browser and test it by sending a query. URL will be
-   provided as you start the server.
-   ```graphql
-   query {
-     ping
-   }
-   ```
+4. Open http://127.0.0.1:8000/ping in the browser and see if you get `PONG`
+
+## How does it work?
+
+When you run `docker compose up`, it launches three things in the background:
+
+- port `6379` - the redis database
+- port `80` - the pocketbase authentication backend
+- port `8000` - and the API itself
+
+The API depends on both the pocketbase and the redis database to work properly.
 
 ## Learning
 
 To contribute to this project, you will need:
 
-- a solid understanding of web backend fundamentals such as the OSI model
-- some level of familiarity with databases. Especially [redis](https://redis.io)
+- a solid web backend fundamentals such as:
+  - [OSI model](https://en.wikipedia.org/wiki/OSI_model)
+  - [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
+  - [API](https://en.wikipedia.org/wiki/API)
+  - etc
+- some level of familiarity with databases. Especially with
+  [redis](https://redis.io)
 - intermediate level Javascript/Typescript programming skill
 
 ### Learning material
 
-- Fundamentals
-  - [GraphQL Tutorial](https://www.howtographql.com)
-  - [Redis Documentation](https://redis.io/docs)
-- Libraries
-  - [GraphQL Yoga server](https://the-guild.dev/graphql/yoga-server)
-  - [node-redis](https://github.com/redis/node-redis)
+- [Rocket Framework](https://rocket.rs)
+- [Redis Documentation](https://redis.io/docs)
+- [Rust By Example](https://doc.rust-lang.org/rust-by-example)
+- [The Rust Book](https://doc.rust-lang.org/book)
