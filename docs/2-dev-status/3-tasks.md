@@ -8,10 +8,9 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### Unknown
+### 2022-12-31
 
-- [Containerize Projects](https://github.com/exyleio/exyleio/issues/86)
-  - duration: 2~3 months expected due to finals
+- [Finish API Spec](https://github.com/exyleio/exyleio/issues/65)
 
 ### Siib™
 
