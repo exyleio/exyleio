@@ -11,6 +11,7 @@ YYYY-MM-DD format (KST).
 ### 2022-12-31
 
 - [Finish API Spec](https://github.com/exyleio/exyleio/issues/65)
+- [Create discord bot skeleton project](https://github.com/exyleio/exyleio/issues/95)
 
 ### Siib™
 
