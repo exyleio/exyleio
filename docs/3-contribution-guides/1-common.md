@@ -27,6 +27,55 @@ also have to read other documents in this folder for your specific skill set.
 
 ## Overview
 
+### Skills
+
+Below is a non-exhaustive list of skills needed to maintain the game. You may
+use this as a starting point to get involved in the Exyle.io development. Note
+that **these are not positions**.
+
+- Accounting
+- User interaction
+  - PR
+  - Marketing
+  - Community management
+    - moderation
+    - e.g.
+      - keeping people engaged
+      - organizing events
+      - incorporating newcomers into the community
+      - managing community satisfaction
+  - Communication
+    - tech support
+    - managing to user feedback
+- Legal
+  - e.g.
+    - Region-specific regulations (e.g. GDPR)
+    - Document management and creation (e.g. ToS, EULA)
+- R & D
+  - DevOps
+    - Docker
+    - GitHub Actions
+  - Programming Language
+    - Rust
+    - Typescript & Javascript
+    - Python
+  - Security
+  - Documentation
+    - docusaurus
+    - markdown
+  - Game Design
+    - UI/UX design
+      - figma
+      - storybook
+    - 3D modeling
+      - blender
+      - godot
+    - Sound design
+      - UI feedback
+      - item sound effects
+    - Game experience
+    - Bug hunting
+
 ## I want to maintain the documentations!
 
 WIP
