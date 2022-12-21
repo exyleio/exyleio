@@ -20,6 +20,8 @@ This is the documentation for the
 
 ## How does it work?
 
+### execution
+
 When you run `docker compose up`, it launches three things in the background:
 
 - port `6379` - the redis database
@@ -27,6 +29,14 @@ When you run `docker compose up`, it launches three things in the background:
 - port `8000` - and the API itself
 
 The API depends on both the pocketbase and the redis database to work properly.
+
+### Documentation generation
+
+To simplify the documentation process, [okapi](https://github.com/GREsau/okapi)
+was used to automate the generation of [OpenAPI](https://www.openapis.org)
+document. You can check this file at http://127.0.0.1/openapi.json. However, it
+is much simpler to open http://127.0.0.1/rapidoc and use the interactive
+[Rapidoc](https://rapidocweb.com) interface.
 
 ## Learning
 
