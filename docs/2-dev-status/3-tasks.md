@@ -11,7 +11,6 @@ YYYY-MM-DD format (KST).
 ### 2022-12-31
 
 - [Finish API Spec](https://github.com/exyleio/exyleio/issues/65)
-- [Add documentation generation to API](https://github.com/exyleio/exyleio/issues/94)
 
 ### Siib™
 
