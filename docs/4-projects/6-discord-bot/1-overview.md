@@ -8,7 +8,7 @@ repository.
 
 ## Getting started
 
-1. Install [Node.js](https://nodejs.org) v16.9.0 or higher
+1. Install docker and docker compose
 
 2. Clone the repository and open it.
 
@@ -20,25 +20,19 @@ repository.
    cd exyleio-discord-bot
    ```
 
-3. Install dependencies.
-
-   ```bash
-   npm install
-   ```
-
-4. [Create a discord bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html).
+3. [Create a discord bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html).
    You must also enable all Privileged Gateway Intents.
 
-5. Create `.env` file
+4. Create `.env` file
 
    ```dosini
    TOKEN=<DISCORD_BOT_TOKEN>
    ```
 
-6. Run the bot
+5. Run the bot
 
    ```
-   npm run start
+   docker compose up --build
    ```
 
 ## Learning
