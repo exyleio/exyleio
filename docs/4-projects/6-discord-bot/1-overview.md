@@ -9,23 +9,34 @@ repository.
 ## Getting started
 
 1. Install [Node.js](https://nodejs.org) v16.9.0 or higher
-2. Clone the repository
-   ```
+
+2. Clone the repository and open it.
+
+   ```bash
    git clone https://github.com/exyleio/exyleio-discord-bot.git
    ```
-3. Install dependencies
+
+   ```bash
+   cd exyleio-discord-bot
    ```
+
+3. Install dependencies.
+
+   ```bash
    npm install
    ```
-4. Create `.env` file
 
-   - [How to generate discord bot token](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
+4. [Create a discord bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html).
+   You must also enable all Privileged Gateway Intents.
+
+5. Create `.env` file
 
    ```dosini
    TOKEN=<DISCORD_BOT_TOKEN>
    ```
 
-5. Run the bot
+6. Run the bot
+
    ```
    npm run start
    ```
@@ -42,5 +53,6 @@ Minimum required skills to contribute to this project:
 
 ### Learning material
 
+- [Discord developers documentation](https://discord.com/developers/docs)
 - [Discord.js Guide](https://discordjs.guide)
 - [TypeScript Tutorial](https://www.typescripttutorial.net)
