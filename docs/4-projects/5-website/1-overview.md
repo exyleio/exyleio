@@ -6,6 +6,9 @@ This is the documentation for the
 [exyleio-web](https://github.com/exyleio/exyleio-web)
 repository.
 
+It contains source code for the Exyle.io website (https://exyleio-web.web.app).
+The domain will change to https://web.exyle.io in the future.
+
 ## Getting started
 
 1. Install [Node.js](https://nodejs.org) (v16) and [yarn](https://yarnpkg.com)
