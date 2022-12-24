@@ -26,7 +26,8 @@ repository.
 4. Create `.env` file
 
    ```dosini
-   TOKEN=<DISCORD_BOT_TOKEN>
+   DISCORD_BOT_TOKEN=<DISCORD_BOT_TOKEN>
+   DISCORD_BOT_ID=<DISCORD_BOT_ID>
    ```
 
 5. Run the bot
