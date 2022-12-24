@@ -14,7 +14,7 @@ This is the documentation for the
    ```
 3. Start a test server locally
    ```
-   docker compose up
+   docker compose up --build
    ```
 4. Open http://127.0.0.1:8000/ping in the browser and see if you get `PONG`
 
