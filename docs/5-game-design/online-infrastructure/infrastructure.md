@@ -6,178 +6,190 @@ title: Overview
 
 ## Introduction
 
-The Exyle.io online infrastructure is a complex intertwined
-collection of programs and services that powers the entire
-game by connecting users with each other and managing their data.
-On the surface, this looks simple enough, but there are many technical
-challenges people are not usually aware of such as seamlessly scaling
-the servers up and down depending on the load, protecting the servers
-from cyber attacks, managing backups and recovering from one when needed,
-making the services crash-tolerant, efficiently organizing all the user
-data, and of course, balancing everything for the minimum operation cost.
-And that's just the tip of the iceberg.
+The Exyle.io online infrastructure is a complex, intertwined collection of
+different components that powers the entire game by connecting users with each
+other and managing their data. This looks simple enough on the surface, but
+there are many technical challenges people are not usually aware of such as
+seamlessly scaling the servers depending on the load, protecting the servers
+from cyber attacks, managing backups and recovering from one when needed, making
+the services crash-tolerant, efficiently organizing all the data, and balancing
+everything for the minimum operation cost. And believe or not, that's just the
+tip of the iceberg.
 
-In this document, we'll go over the surface level information about
-the entire system with the goal of having a better understanding of how
-things fit with each other.
+In this document, we'll try to unravel this information from a developer's
+point of view with the goal of understanding where different component exists
+and how they fit with each other.
 
 Below is a simplified diagram of the said system.
 
 ```mermaid
+%%{
+    init: {
+        "flowchart": {
+            "curve": "linear"
+        }
+    }
+}%%
+
 flowchart LR
+    subgraph external-services[External Services]
+        direction LR
+
+        discord-api[Discord API]
+        patreon-api[Patreon API]
+    end
+    external-services --- user
+    external-services --- master-server
+
     subgraph firebase[Firebase]
         direction LR
+
         web-client["Web Client\n(exyle.io)"]
         website["Website\n(web.exyle.io)"]
         status-site["Status site\n(status.exyle.io)"]
     end
     firebase --- browser
 
-    subgraph discord[Discord]
-        discord-api[Discord API]
-    end
-    discord-api --- desktop
-    discord-api --- discord-bot
-    discord-bot --- exyleio-api
-
-    subgraph patreon[Patreon]
-        patreon-api[Patreon API]
-    end
-    patreon-api --- exyleio-api
-
     subgraph user[User]
-        browser[Web Browser]
         desktop[Desktop]
+        browser[Web Browser]
     end
-    user --- nginx-proxy
-    user --- aws-gamelift-fleet
+    user --- regional-game-servers
+    user --- master-server
 
-    subgraph aws[AWS]
-        classDef aws_padding fill:none,stroke:none
-        subgraph aws_padding [ ]
-            subgraph aws-gamelift-fleet[AWS GameLift Fleet]
-                direction LR
-                region-servers-stable[stable version pool]
-                region-servers-dev[development version pool]
-            end
-            aws-gamelift-fleet --- nginx-proxy
+    subgraph linode-servers[Linode]
+        classDef linode_padding fill:none,stroke:none
+            subgraph linode_padding [ ]
+                linode-api[Linode API]
 
-            subgraph master-server[Master Server]
-                discord-bot[Discord Bot]
-                nginx-proxy[ \n\n\n NGINX \n reverse \n proxy \n\n\n\n]
-
-                subgraph exyleio-api[Exyle.io API]
+                subgraph regional-game-servers[Regional Game Servers]
                     direction LR
-                    api-stable[stable version]
-                    api-dev[development version]
-                end
 
-                subgraph data[Data]
-                    direction LR
-                    redis-db[(Redis Database)]
-                    long-term-storage[(Long-term Storage)]
+                    region-servers-stable[stable version pool]
+                    region-servers-dev[development version pool]
                 end
+                regional-game-servers --- exyleio-api
+
+                subgraph master-server[Master Server]
+                    direction LR
+
+                    exyleio-api[Exyle.io API]
+                    discord-bot[Discord Bot]
+                    pocketbase[Pocketbase]
+                    redis-server[Redis Server]
+                end
+                exyleio-api --- redis-server
+                discord-bot --- exyleio-api
+                pocketbase --- exyleio-api
+                exyleio-api --- linode-api
+
+                subgraph storage[Storage]
+                    direction LR
+
+                    block-storage[Block Storage]
+                    object-storage[Object Storage]
+                end
+                exyleio-api --- object-storage
+                redis-server --- block-storage
             end
-            nginx-proxy --- exyleio-api
-            exyleio-api --- data
-        end
-        class aws_padding aws_padding
+        class linode_padding linode_padding
     end
 ```
 
-## Discord
+## External Services
 
-Discord offers various tools developers can work with to create epic
-features such as role syncing, chat bridge, rich presence, game
-invitation, etc. This helps alleviate the boundary between the community
-(Discord) and the game.
+Although we try to stay as independent as possible in terms of technology, when
+it comes to platform, we tend to use things that can be used by the largest
+number of people.
+
+[Discord](https://discord.com) is by far the most popular (and arguably the most
+powerful) community-building platform in the world. Especially for gamers. Here
+in Exyle.io, we use Discord extensively to alleviate the boundary between the
+community and the game. Discord provides various tools developers can use to
+create epic features such as role syncing, game invites, gaming activity status,
+chat bridge, etc. You can find more information in the
+[Discord Developer Portal](https://discord.com/developers/docs/intro).
+
+[Patreon](https://patreon.com) is a membership platform used to financially
+support Exyle.io. You can find more information in the
+[Patreon API Documentations](https://docs.patreon.com)
 
 ## Firebase
 
-Whenever we need a website that users can open using their web browser,
-we use [Google firebase](https://firebase.google.com). We made this
-choice because it is free, reliant, fast, and easy to work with which
-is not a combination you see every day.
+[Firebase](https://firebase.google.com) is a popular
+[Baas (Backend as a Service)](https://www.cloudflare.com/learning/serverless/glossary/backend-as-a-service-baas)
+owned by Google. Although they provide many useful features, we're only using it
+to host websites to prevent
+[Vendor lock-in](https://www.cloudflare.com/learning/cloud/what-is-vendor-lock-in)
+(also fuck Google). As a replacement, we're using [Pocketbase](#pocketbase).
 
-## AWS
+## User
 
-Once a developer build a program, they need a place to run them.
-Of course, it is possible for them to use their computer, but that
-comes at the cost of security, stability, and performance. Because
-of that, every component of our cloud infrastructure are hosted by
-Amazon in their [AWS](https://aws.amazon.com) platform. We
-specifically chose this provider mainly because they provide a simple
-way to manage game servers
-([Amazon GameLift](https://aws.amazon.com/gamelift)), but they also
-have the best cost to performance ratio when it comes to the level of
-performance we need from our servers. They also happen to be the most
-popular cloud service provider in the world, so there are plenty of
-learning materials to train future developers.
+Ways to interact with Exyle.io:
+
+- Playing the game
+  - via Desktop Client
+  - via Web Client
+- Visiting a website
+  - via Web Browser
+
+## Linode
+
+[Linode](https://linode.com) is a cloud hosting provider that provides one of
+the cheapest service without any major compromises.
 
 Related resources:
 
-- [server distribution plan](./server-distribution-plan)
-- [List of available regions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-- [EC2 instance types](https://aws.amazon.com/ko/ec2/instance-types)
-- [pricing](https://aws.amazon.com/ko/gamelift/pricing)
+- [infrastructure Distribution](https://linode.com/global-infrastructure)
+- [Pricing](https://linode.com/pricing)
 
-### Game servers
+## Regional Game Servers
 
-Game servers use one of the following instance types.
-They all have at least 8GB RAM and 2 vCPU.
-
-| Instance Type | vCPU | threads per core\* | RAM (GB) |           CPU model           |                                       benchmark (www.cpubenchmark.net)                                        |
-| :-----------: | :--: | :----------------: | :------: | :---------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|   m5.large    |  2   |                    |    8     |     intel 8175M / 8259CL      | [26659](https://www.cpubenchmark.net/cpu.php?id=3311) / [33279](https://www.cpubenchmark.net/cpu.php?id=3671) |
-|   m5a.large   |  2   |                    |    8     |         AMD EPYC 7571         |                             [27445](https://www.cpubenchmark.net/cpu.php?id=3543)                             |
-|   m4.large    |  2   |                    |    8     | intel E5-2686 v4 / E5-2676 v3 | [16745](https://www.cpubenchmark.net/cpu.php?id=2870) / [13498](https://www.cpubenchmark.net/cpu.php?id=2643) |
-
-\*: [threads per core](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supported-instances-values.html)
+Game servers are strategically placed across the globe to provide low latency
+gaming experience for everyone. They each host one or more game server that are
+automatically allocated and de-allocated by the [master server](#master-server).
+You can learn how they are distributed in the
+[server distribution plan](./server-distribution-plan).
 
 ## Master server
 
-Located in Northern Virginia (us-east-1), the master server is
-a t3a.micro EC2 instance responsible for the orchestration of
-region-specific game servers, databases, and various external
-services.
+Located in Newark, New Jerseys, the master server is the "brain" of Exyle.io
+responsible for bringing everything together as a single service.
 
-## Nginx
+## Pocketbase
 
-Since shutting down a server and relaunching an updated version
-will result in some downtime, an NGINX reverse proxy is used to
-seamlessly switch between different API versions. This also
-removes the need to give the server root permission to access
-system ports.
+[Pocketbase](https://pocketbase.io) a simple, self-hosted backend server used to
+authenticate users.
 
 ## Exyle.io API
 
-The Exyle.io API is a [GraphQL](https://graphql.org)-based interface
-between the data and the users. It acts as a middleman that safely
-reads from and writes to the database so no one can view or modify
-it without authorization. To minimize the effects of cyber attacks,
-it is protected by [Cloudflare](https://www.cloudflare.com).
+The Exyle.io API is a HTTP-based interface between the data and the users.
+It acts as a middleman that safely reads from and writes to the database so no
+one can view or modify it without proper authorization.
 
-## Redis Database
+It also communicates with the Linode API to instantiate and destroy regional
+game servers depending on the load.
 
-Database is defined as a collection of data relevant to the operation of
-a service. Behind the scene, we use [Redis](https://redis.com) which is a
-in-memory key-value store as opposed to the more traditional relational
-table database. We made this choice not only because redis has a blazingly
-fast read/write speed, but also because it has many useful modern features
-such as the ability to easily rank players based on certain statistics which
-is made possible thanks to its
-[sorted sets](https://redis.io/docs/data-types/sorted-sets) data type.
-However, since redis is volatile by default, it requires extra configuration
-to have [persistency](https://redis.io/docs/manual/persistence).
-In our case, we're only using AOF.
+## Redis Server
 
-## Long-term storage
+[Redis](https://redis.com) is a in-memory key-value database as opposed to the
+more traditional relational table database. It is very extensible thanks to its
+[modules](https://redis.io/resources/modules) system, and has many useful modern
+features such as [sorted sets](https://redis.io/docs/data-types/sorted-sets)
+which makes it easy to rank players based on certain statistics. However, redis
+is volatile by default so it requires extra
+[configuration](https://github.com/exyleio/exyleio-scripts/tree/master/master-server)
+for the data to be [persistent](https://redis.io/docs/manual/persistence).
 
-It is impractical to store large files that do not get many read/write requests
-in the database especially since redis puts all its data in the memory. Because
-of that, files such as skin assets, match replay files, and server logs are
-stored separately in a special place called the
-[object storage](https://aws.amazon.com/s3). It is a slow, but extremely reliant
-and cost-effective solution for archiving data for long periods of time. For
-comparison, [elastic block storage (EBS)](https://aws.amazon.com/ebs) is
-available 99.999% of the time as supposed to 99.999999999% in S3.
+## Storage
+
+There are two types of storage in Linode:
+[Block Storage](https://linode.com/products/block-storage) and
+[Object Storage](https://linode.com/products/object-storage).
+
+|             Area | Block Storage  |    Object Storage    |
+| ---------------: | :------------: | :------------------: |
+| Read/Write speed |      High      |         Low          |
+|          Latency |      Low       |         High         |
+|     Price per GB |      High      |         Low          |
+|        Use cases | Redis Database | Log & Replay storage |
