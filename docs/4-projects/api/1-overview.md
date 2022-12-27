@@ -25,7 +25,7 @@ This is the documentation for the
 When you run `docker compose up`, it launches three things in the background:
 
 - port `6379` - the redis database
-- port `80` - the pocketbase authentication backend
+- port `8090` - the pocketbase authentication backend
 - port `8000` - and the API itself
 
 The API depends on both the pocketbase and the redis database to work properly.
