@@ -10,7 +10,7 @@ YYYY-MM-DD format (KST).
 
 ### 2022-12-31
 
-- [Finish API Spec](https://github.com/exyleio/exyleio/issues/65)
+- [Implement Website Sign Up, Login, and Logout](https://github.com/exyleio/exyleio/issues/97)
 
 ### Siib™
 
