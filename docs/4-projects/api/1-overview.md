@@ -66,7 +66,7 @@ To contribute to this project, you will need:
   - etc
 - some level of familiarity with databases. Especially with
   [redis](https://redis.io)
-- intermediate level Javascript/Typescript programming skill
+- basic Rust programming skill
 
 ### Learning material
 
