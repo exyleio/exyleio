@@ -8,14 +8,22 @@ repository.
 
 ## Getting started
 
-1. Install NodeJS (16.14 or above) and the yarn CLI
-2. Serve documentations website locally
+1. [Setup Docker](/docs/contribution-guides/developers/docker)
+
+2. Clone the repository and open it
+
    ```
-   yarn start
+   git clone https://github.com/exyleio/exyleio-discord-bot.git
    ```
-3. Build for production
+
    ```
-   yarn build
+   cd exyleio-discord-bot
+   ```
+
+3. Start a local development server at http://localhost:3000
+
+   ```
+   docker compose up --build
    ```
 
 ## Learning

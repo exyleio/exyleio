@@ -11,26 +11,22 @@ The domain will change to https://web.exyle.io in the future.
 
 ## Getting started
 
-1. Install [Node.js](https://nodejs.org) (v16) and [yarn](https://yarnpkg.com)
-2. Install dependencies
+1. [Setup Docker](/docs/contribution-guides/developers/docker)
+
+2. Clone the repository and open it
+
    ```
-   yarn install
+   git clone https://github.com/exyleio/exyleio-web.git
    ```
-3. Start a local server
+
    ```
-   yarn dev
+   cd exyleio-web
    ```
-   Or start the server and open the app in a new browser tab
+
+3. Start a local development server at http://localhost:5173
+
    ```
-   yarn dev -- --open
-   ```
-4. Build for production
-   ```
-   yarn build
-   ```
-   You can preview the production build with
-   ```
-   yarn preview
+   docker compose up --build
    ```
 
 ## Learning

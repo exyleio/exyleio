@@ -8,15 +8,15 @@ repository.
 
 ## Getting started
 
-1. Install docker and docker compose
+1. [Setup Docker](/docs/contribution-guides/developers/docker)
 
-2. Clone the repository and open it.
+2. Clone the repository and open it
 
-   ```bash
+   ```
    git clone https://github.com/exyleio/exyleio-discord-bot.git
    ```
 
-   ```bash
+   ```
    cd exyleio-discord-bot
    ```
 
