@@ -23,7 +23,7 @@ The domain will change to https://web.exyle.io in the future.
    cd exyleio-web
    ```
 
-3. Start a local development server at http://localhost:5173
+3. Start a local development server at http://127.0.0.1:5173
 
    ```
    docker compose up --build

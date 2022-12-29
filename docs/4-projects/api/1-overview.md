@@ -19,13 +19,13 @@ This is the documentation for the
    cd exyleio-api
    ```
 
-3. Start a local development server at http://localhost:8000
+3. Start a local development server at http://127.0.0.1:8000
 
    ```
    docker compose up --build
    ```
 
-4. Open http://localhost:8000/ping in your browser and see if you get `PONG`
+4. Open http://127.0.0.1:8000/ping in your browser and see if you get `PONG`
 
 ## How does it work?
 

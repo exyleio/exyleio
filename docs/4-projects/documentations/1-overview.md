@@ -20,7 +20,7 @@ repository.
    cd exyleio
    ```
 
-3. Start a local development server at http://localhost:3000
+3. Start a local development server at http://127.0.0.1:3000
 
    ```
    docker compose up --build
