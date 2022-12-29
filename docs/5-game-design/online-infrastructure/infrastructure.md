@@ -44,18 +44,24 @@ flowchart LR
     subgraph firebase[Firebase]
         direction LR
 
-        web-client["Web Client\n(exyle.io)"]
-        website["Website\n(web.exyle.io)"]
-        status-site["Status site\n(status.exyle.io)"]
+        firebase-auth[Authentication]
+
+        subgraph firebase-hosting[Hosting]
+            direction LR
+            web-client["Web Client\n(exyle.io)"]
+            website["Website\n(web.exyle.io)"]
+            status-site["Status site\n(status.exyle.io)"]
+        end
     end
-    firebase --- browser
+    firebase-hosting --- browser
+    firebase-auth --- user
 
     subgraph user[User]
         desktop[Desktop]
         browser[Web Browser]
     end
     user --- regional-game-servers
-    user --- master-server
+    user --- exyleio-api
 
     subgraph linode-servers[Linode]
         classDef linode_padding fill:none,stroke:none
@@ -75,12 +81,10 @@ flowchart LR
 
                     exyleio-api[Exyle.io API]
                     discord-bot[Discord Bot]
-                    pocketbase[Pocketbase]
                     redis-server[Redis Server]
                 end
                 exyleio-api --- redis-server
                 discord-bot --- exyleio-api
-                pocketbase --- exyleio-api
                 exyleio-api --- linode-api
 
                 subgraph storage[Storage]
@@ -119,9 +123,8 @@ support Exyle.io. You can find more information in the
 [Firebase](https://firebase.google.com) is a popular
 [Baas (Backend as a Service)](https://www.cloudflare.com/learning/serverless/glossary/backend-as-a-service-baas)
 owned by Google. Although they provide many useful features, we're only using it
-to host websites to prevent
-[Vendor lock-in](https://www.cloudflare.com/learning/cloud/what-is-vendor-lock-in)
-(also fuck Google). As a replacement, we're using [Pocketbase](#pocketbase).
+to host websites and authenticate users. This is to prevent
+[Vendor lock-in](https://www.cloudflare.com/learning/cloud/what-is-vendor-lock-in).
 
 ## User
 
@@ -155,11 +158,6 @@ You can learn how they are distributed in the
 
 Located in Newark, New Jerseys, the master server is the "brain" of Exyle.io
 responsible for bringing everything together as a single service.
-
-## Pocketbase
-
-[Pocketbase](https://pocketbase.io) a simple, self-hosted backend server used to
-authenticate users.
 
 ## Exyle.io API
 
