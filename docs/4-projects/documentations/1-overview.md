@@ -13,11 +13,11 @@ repository.
 2. Clone the repository and open it
 
    ```
-   git clone https://github.com/exyleio/exyleio-discord-bot.git
+   git clone https://github.com/exyleio/exyleio.git
    ```
 
    ```
-   cd exyleio-discord-bot
+   cd exyleio
    ```
 
 3. Start a local development server at http://localhost:3000
