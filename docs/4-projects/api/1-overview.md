@@ -20,15 +20,6 @@ This is the documentation for the
 
 ## How does it work?
 
-### Execution
-
-When you run `docker compose up`, it launches three things in the background:
-
-- port `6379` - the redis database
-- port `8000` - and the API itself
-
-The API depends on both the redis database to work properly.
-
 ### API Endpoint Documentation Generation
 
 To simplify the documentation process, [okapi](https://github.com/GREsau/okapi)
