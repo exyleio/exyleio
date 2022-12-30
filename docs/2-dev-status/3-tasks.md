@@ -8,9 +8,10 @@ YYYY-MM-DD format (KST).
 
 ## Deadlines
 
-### 2022-12-31
+### 2023-01-07
 
-- [Implement Website Sign Up, Login, and Logout](https://github.com/exyleio/exyleio/issues/97)
+- [Implement ID token verification for API server](https://github.com/exyleio/exyleio/issues/100)
+- [Implement email verification](https://github.com/exyleio/exyleio/issues/99)
 
 ### Siib™
 
