@@ -54,11 +54,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/master/docs/`,
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/master/`,
         },
         blog: {
           showReadingTime: true,
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/master/blog/`,
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/master/`,
         },
         theme: {
           customCss: require.resolve("./src/css/style.css"),
