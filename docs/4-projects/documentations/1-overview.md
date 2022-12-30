@@ -8,9 +8,16 @@ repository.
 
 ## Getting started
 
-1. [Setup Docker](/docs/contribution-guides/developers/docker)
+1. [Setup Docker](/docs/contribution-guides/developers/docker) and install
+   [Node.JS](https://nodejs.org)
 
-2. Clone the repository and open it
+2. Install yarn CLI
+
+   ```
+   npm install --global yarn
+   ```
+
+3. Clone the repository and open it
 
    ```
    git clone https://github.com/exyleio/exyleio.git
@@ -20,7 +27,13 @@ repository.
    cd exyleio
    ```
 
-3. Start a local development server at http://127.0.0.1:3000
+4. Install dependencies
+
+   ```
+   yarn install
+   ```
+
+5. Start a local development server at http://127.0.0.1:3000
 
    ```
    docker compose up --build
