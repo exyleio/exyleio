@@ -90,9 +90,13 @@ Minimum required skills to contribute to this project:
 - Svelte
   - [Svelte Tutorial](https://svelte.dev/tutorial)
   - [Svelte Documentation](https://svelte.dev/docs)
+  - [Learn Svelte (Experimental)](https://learn.svelte.dev)
   - [Svelte Kit Documentation](https://kit.svelte.dev/docs)
 - Styling
   - [TailwindCSS](https://tailwindcss.com/docs)
   - [SASS Tutorial](https://sass-lang.com/guide)
+- Firebase
+  - [Documentation](https://firebase.google.com/docs)
+  - [Authentication Documentation](https://firebase.google.com/docs/auth)
 - Etc
   - [TypeScript Tutorial](https://www.typescripttutorial.net)
