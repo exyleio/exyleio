@@ -8,7 +8,8 @@ repository.
 
 ## Getting started
 
-1. [Setup Docker](/docs/contribution-guides/developers/docker)
+1. [Setup Docker](/docs/contribution-guides/developers/docker) and install
+   [Node.JS](https://nodejs.org)
 
 2. Clone the repository and open it
 
@@ -30,7 +31,13 @@ repository.
    DISCORD_BOT_ID=<DISCORD_BOT_ID>
    ```
 
-5. Run the bot
+5. Install dependencies
+
+   ```
+   npm install
+   ```
+
+6. Run the bot
 
    ```
    docker compose up --build

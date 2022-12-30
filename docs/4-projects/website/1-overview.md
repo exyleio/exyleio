@@ -11,9 +11,16 @@ The domain will change to https://web.exyle.io in the future.
 
 ## Getting started
 
-1. [Setup Docker](/docs/contribution-guides/developers/docker)
+1. [Setup Docker](/docs/contribution-guides/developers/docker) and install
+   [Node.JS](https://nodejs.org)
 
-2. Clone the repository and open it
+2. Install yarn CLI
+
+   ```
+   npm install --global yarn
+   ```
+
+3. Clone the repository and open it
 
    ```
    git clone https://github.com/exyleio/exyleio-web.git
@@ -23,7 +30,13 @@ The domain will change to https://web.exyle.io in the future.
    cd exyleio-web
    ```
 
-3. Start a local development server at http://127.0.0.1:5173
+4. Install dependencies
+
+   ```
+   yarn install
+   ```
+
+5. Start a local development server at http://127.0.0.1:5173
 
    ```
    docker compose up --build
