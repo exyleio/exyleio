@@ -36,7 +36,33 @@ The domain will change to https://web.exyle.io in the future.
    yarn install
    ```
 
-5. Start a local development server at http://127.0.0.1:5173
+5. Setup a firebase project at https://console.firebase.google.com
+
+   - Copy `firebaseConfig` you got from the the setup process and paste it in
+     [`src/lib/constants.ts`](https://github.com/exyleio/exyleio-web/blob/master/src/lib/constants.ts).
+     You can see the code again in the
+     [Project settings](https://console.firebase.google.com/project/_/settings/general/web)
+     (select your project).
+
+6. Install and setup firebase CLI
+
+   ```
+   npm install -g firebase-tools
+   ```
+
+   ```
+   firebase emulator login
+   ```
+
+7. Start a local development server at http://127.0.0.1:5173
+
+   - Start firebase authentication emulator
+
+   ```
+   firebase emulators:start --only auth
+   ```
+
+   - Start servers
 
    ```
    docker compose up --build
