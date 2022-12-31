@@ -92,6 +92,9 @@ Minimum required skills to contribute to this project:
   - [Svelte Documentation](https://svelte.dev/docs)
   - [Learn Svelte (Experimental)](https://learn.svelte.dev)
   - [Svelte Kit Documentation](https://kit.svelte.dev/docs)
+- UI Framework
+  - [Flowbite Documentation](https://flowbite.com/docs)
+  - [Flowbite-Svelte](https://flowbite-svelte.com)
 - Styling
   - [TailwindCSS](https://tailwindcss.com/docs)
   - [SASS Tutorial](https://sass-lang.com/guide)
