@@ -11,6 +11,7 @@ YYYY-MM-DD format (KST).
 ### 2023-01-07
 
 - [Implement ID token verification for API server](https://github.com/exyleio/exyleio/issues/100)
+- [Add authentication process documentation](https://github.com/exyleio/exyleio/issues/102)
 
 ### Siib™
 
