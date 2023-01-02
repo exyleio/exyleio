@@ -93,5 +93,6 @@ Minimum required skills to contribute to this project:
 - Firebase
   - [Documentation](https://firebase.google.com/docs)
   - [Authentication Documentation](https://firebase.google.com/docs/auth)
+  - [Authentication in Exyle.io](/docs/game-design/authentication)
 - Etc
   - [TypeScript Tutorial](https://www.typescripttutorial.net)

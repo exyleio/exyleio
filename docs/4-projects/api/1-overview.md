@@ -70,6 +70,7 @@ To contribute to this project, you will need:
 
 ### Learning material
 
+- [Authentication in Exyle.io](/docs/game-design/authentication)
 - [Rocket Framework](https://rocket.rs)
 - [Redis Documentation](https://redis.io/docs)
 - [Rust By Example](https://doc.rust-lang.org/rust-by-example)
