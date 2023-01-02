@@ -12,6 +12,7 @@ Date&Time is in UTC (YYYY-MM-DD)
 - 2022-12-20 - Finalized API stack
 - 2022-12-22 - Started working on the Discord bot
 - 2022-12-24 - Deployed master server with API, DB, and Discord bot
+- 2023-01-01 - Account creation enabled
 - Planned
   - 2023-10-10 - lead developer developomp's Military service begins
   - 2024-09-XX - discharged from military duty
