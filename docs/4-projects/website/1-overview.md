@@ -56,16 +56,8 @@ The domain will change to https://web.exyle.io in the future.
 
 7. Start a local development server at http://127.0.0.1:5173
 
-   - Start firebase authentication emulator
-
    ```
-   firebase emulators:start --only auth
-   ```
-
-   - Start servers
-
-   ```
-   docker compose up --build
+   yarn start
    ```
 
 ## Learning
