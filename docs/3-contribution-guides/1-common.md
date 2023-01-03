@@ -76,22 +76,24 @@ that **these are not positions**.
     - Game experience
     - Bug hunting
 
-## I want to maintain the documentations!
+## Where to get started?
 
-WIP
+### I want to maintain the documentations!
 
-## I want to design maps!
+- [Documentations contribution guide](/docs/contribution-guides/documentations/overview)
 
-WIP
+### I want to design maps!
 
-## I want to write code!
+- [Map makers contribution guide](/docs/contribution-guides/map-makers/overview)
 
-WIP
+### I want to write code!
 
-## I want to improve the UI!
+- [Developers contribution guide](/docs/contribution-guides/developers/overview)
 
-WIP
+### I want to improve the UI!
 
-## I want to improve the audio!
+- [UI/UX contribution guide](/docs/contribution-guides/ui-ux/overview)
 
-WIP
+### I want to improve the audio!
+
+- [UI/UX Audio contribution guide](/docs/contribution-guides/ui-ux/audio)
