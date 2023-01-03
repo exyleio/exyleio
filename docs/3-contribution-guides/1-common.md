@@ -6,32 +6,27 @@ title: Common
 
 ## Introduction
 
-There are many different ways to contribute to Exyle.io.
-There is of course the obvious way of becoming a supporter at
-[patreon.com/developomp](https://www.patreon.com/developomp),
-but Exyle allows you to do much more than that. You could, for
-instance apply for a community moderator position,
-report suspicious/toxic users,
-[submit suggestions/bug reports](./community-feedback),
-or participate in development poll/discussion in our community
-[discord server](https://discord.gg/synPSeuNFK).
+Hi there! Do you want to contribute to Exyle.io? Well, there are plenty of
+options available to you. Here are a few suggestions:
 
-However, if you would like to do even more than that, well, this
-document has got you covered. Whether you're a developer, an artist,
-a designer, or someone with way too much free time, this document
-should get you up to speed when it comes to the contribution process
-in Exyle.io.
+- financially support the project by becoming a
+  [Patreon](https://patreon.com/developomp) (which gives you some
+  [perks](/docs/game-design/supporter#perks))
+- maintain the community by applying for a moderator position
+- keep the community safe by reporting any suspicious or toxic users
+- guide the development direction by
+  [submitting suggestions & bug reports](./community-feedback)
+- give feedback by participating in development polls and discussions in our
+  community [discord server](https://discord.gg/synPSeuNFK)
 
-Of course, we can't cover every area in a single document, so you will
-also have to read other documents in this folder for your specific skill set.
+But if you want to get more involved with the project, this document has got you
+covered. Read through to see which area interests you and learn how to get
+started.
 
-## Overview
+## Skills
 
-### Skills
-
-Below is a non-exhaustive list of skills needed to maintain the game. You may
-use this as a starting point to get involved in the Exyle.io development. Note
-that **these are not positions**.
+Below is a non-exhaustive list of skills needed to maintain the game. Note that
+**these are not positions**.
 
 - Accounting
 - User interaction
