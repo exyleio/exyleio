@@ -36,7 +36,7 @@ repository.
 5. Start a local development server at http://127.0.0.1:3000
 
    ```
-   docker compose up --build
+   yarn start
    ```
 
 ## Learning
