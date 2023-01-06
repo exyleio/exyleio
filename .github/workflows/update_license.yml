@@ -1,0 +1,52 @@
+name: Update License
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - LICENSE.md
+
+jobs:
+  update-license:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repo:
+          [
+            "exyleio/exyleio-api",
+            "exyleio/exyleio-web",
+            "exyleio/exyleio-game",
+            "exyleio/exyleio-wiki",
+            "exyleio/exyleio-status",
+            "exyleio/exyleio-scripts",
+            "exyleio/exyleio-launcher",
+            "exyleio/exyleio-discord-bot",
+          ]
+    steps:
+      - name: Clone exyleio/.github repository
+        uses: actions/checkout@v3
+        with:
+          repository: exyleio/.github
+          path: exyleio/.github
+
+      - name: Clone a organization repo
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ matrix.repo }}
+          path: ${{ matrix.repo }}
+
+      - name: Copy license file
+        run: cp exyleio/.github/LICENSE.md ${{ matrix.repo }}
+
+      - name: Update License
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -a -m "Update LICENSE.md"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          directory: ${{ matrix.repo }}
