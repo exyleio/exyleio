@@ -114,6 +114,10 @@ const config = {
                 label: "EULA",
                 to: "/eula",
               },
+              {
+                label: "Software License",
+                to: "https://github.com/exyleio/exyleio/blob/master/LICENSE.md",
+              },
             ],
           },
         ],
