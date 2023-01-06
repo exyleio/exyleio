@@ -38,7 +38,7 @@ jobs:
           path: ${{ matrix.repo }}
 
       - name: Copy license file
-        run: cp exyleio/.github/LICENSE.md ${{ matrix.repo }}
+        run: cp exyleio/exyleio/LICENSE.md ${{ matrix.repo }}
 
       - name: Update License
         run: |
