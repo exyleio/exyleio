@@ -14,15 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        repo:
-          [
+        repo: [
             "exyleio/exyleio-api",
             "exyleio/exyleio-web",
             "exyleio/exyleio-game",
-            "exyleio/exyleio-wiki",
-            "exyleio/exyleio-status",
+            # "exyleio/exyleio-wiki",
+            # "exyleio/exyleio-status",
             "exyleio/exyleio-scripts",
-            "exyleio/exyleio-launcher",
+            # "exyleio/exyleio-launcher",
             "exyleio/exyleio-discord-bot",
           ]
     steps:
