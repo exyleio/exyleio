@@ -36,9 +36,6 @@ jobs:
           curl https://raw.githubusercontent.com/exyleio/exyleio/master/LICENSE.md > LICENSE.md
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -a -m "Update LICENSE.md"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          directory: ${{ matrix.repo }}
+          git add LICENSE.md
+          git commit -m "Update `LICENSE.md`"
+          git push
