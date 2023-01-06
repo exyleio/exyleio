@@ -8,7 +8,6 @@ YYYY-MM-DD format (KST).
 
 ### 2023-01-07
 
-- [Create software license](https://github.com/exyleio/exyleio/issues/22)
 - [Add user profile page](https://github.com/exyleio/exyleio/issues/103)
 
 ### 2023-01-10
