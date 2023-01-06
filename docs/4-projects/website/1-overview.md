@@ -14,13 +14,7 @@ The domain will change to https://web.exyle.io in the future.
 1. [Setup Docker](/docs/contribution-guides/developers/docker) and install
    [Node.JS](https://nodejs.org)
 
-2. Install yarn CLI
-
-   ```
-   npm install --global yarn
-   ```
-
-3. Clone the repository and open it
+2. Clone the repository and open it
 
    ```
    git clone https://github.com/exyleio/exyleio-web.git
@@ -30,13 +24,13 @@ The domain will change to https://web.exyle.io in the future.
    cd exyleio-web
    ```
 
-4. Install dependencies
+3. Install dependencies
 
    ```
-   yarn install
+   npm install
    ```
 
-5. Setup a firebase project at https://console.firebase.google.com
+4. Setup a firebase project at https://console.firebase.google.com
 
    - Copy `firebaseConfig` you got from the the setup process and paste it in
      [`src/lib/constants.ts`](https://github.com/exyleio/exyleio-web/blob/master/src/lib/constants.ts).
@@ -44,7 +38,7 @@ The domain will change to https://web.exyle.io in the future.
      [Project settings](https://console.firebase.google.com/project/_/settings/general/web)
      (select your project).
 
-6. Install and setup firebase CLI
+5. Install and setup firebase CLI
 
    ```
    npm install -g firebase-tools
@@ -54,10 +48,10 @@ The domain will change to https://web.exyle.io in the future.
    firebase emulator login
    ```
 
-7. Start a local development server at http://127.0.0.1:5173
+6. Start a local development server at http://127.0.0.1:5173
 
    ```
-   yarn start
+   npm run start
    ```
 
 ## Learning
@@ -69,7 +63,6 @@ Minimum required skills to contribute to this project:
   - CSS
   - HTML
 - NodeJS
-  - yarn CLI
 - Typescript
 - Svelte
   - SvelteKit
