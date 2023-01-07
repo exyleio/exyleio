@@ -8,10 +8,7 @@ repository.
 
 ## Getting started
 
-1. [Setup Docker](/docs/contribution-guides/developers/docker) and install
-   [Node.JS](https://nodejs.org) 16.6.0+
-
-2. Clone the repository and open it
+1. Clone the repository and open it
 
    ```
    git clone https://github.com/exyleio/exyleio-discord-bot.git
@@ -20,6 +17,9 @@ repository.
    ```
    cd exyleio-discord-bot
    ```
+
+2. [Setup Docker](/docs/contribution-guides/developers/docker) and install
+   [Node.JS](https://nodejs.org) 16.6.0+
 
 3. [Create a discord bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html).
    You must also enable all Privileged Gateway Intents.
@@ -33,16 +33,10 @@ repository.
    DISCORD_BOT_ID=<DISCORD_BOT_ID>
    ```
 
-5. Install dependencies
+5. Start the bot
 
    ```
-   npm install
-   ```
-
-6. Run the bot
-
-   ```
-   docker compose up --build
+   ./run.sh
    ```
 
 ## Learning
