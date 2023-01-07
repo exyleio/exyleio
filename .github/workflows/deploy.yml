@@ -28,7 +28,7 @@ jobs:
           node-version: 16
           cache: npm
       - name: Install dependencies and Build
-        run: npm run install && npm run build
+        run: npm install && npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
