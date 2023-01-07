@@ -32,7 +32,16 @@ The domain will change to https://web.exyle.io in the future.
      [Project settings](https://console.firebase.google.com/project/_/settings/general/web)
      (select your project).
 
-4. Start a local development server
+4. Create `.env` file
+
+   - set `PUBLIC_USE_PRODUCTION_API` to `false` if you want to use your own API
+     server hosted locally.
+
+   ```dosini
+   PUBLIC_USE_PRODUCTION_API=true
+   ```
+
+5. Start a local development server
 
    - http://127.0.0.1:5173 - Website
    - http://127.0.0.1:4000 - Firebase Emulator Suite
