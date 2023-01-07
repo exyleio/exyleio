@@ -7,9 +7,7 @@ This is the documentation for the
 
 ## Getting started
 
-1. [Setup Docker](/docs/contribution-guides/developers/docker)
-
-2. Clone the repository and open it
+1. Clone the repository and open it
 
    ```
    git clone https://github.com/exyleio/exyleio-api.git
@@ -19,14 +17,17 @@ This is the documentation for the
    cd exyleio-api
    ```
 
+2. [Setup Docker](/docs/contribution-guides/developers/docker)
+
 3. Start a local development server
 
    - http://127.0.0.1 - API
-   - http://127.0.0.1:3000 - [website](https://github.com/exyleio/exyleio-web)
+   - http://127.0.0.1/rapidoc - interactive API Documentation
+   - http://127.0.0.1:5173 - [website](https://github.com/exyleio/exyleio-web)
      instance
 
    ```
-   docker compose up --build
+   ./run.sh
    ```
 
 4. Open http://127.0.0.1/ping in your browser and see if you get `PONG`
