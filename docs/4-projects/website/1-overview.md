@@ -11,10 +11,7 @@ The domain will change to https://web.exyle.io in the future.
 
 ## Getting started
 
-1. [Setup Docker](/docs/contribution-guides/developers/docker) and install
-   [Node.JS](https://nodejs.org)
-
-2. Clone the repository and open it
+1. Clone the repository and open it
 
    ```
    git clone https://github.com/exyleio/exyleio-web.git
@@ -24,13 +21,10 @@ The domain will change to https://web.exyle.io in the future.
    cd exyleio-web
    ```
 
-3. Install dependencies
+2. [Setup Docker](/docs/contribution-guides/developers/docker) and install
+   [Node.JS](https://nodejs.org)
 
-   ```
-   npm install
-   ```
-
-4. Setup a firebase project at https://console.firebase.google.com
+3. Setup a firebase project at https://console.firebase.google.com
 
    - Copy `firebaseConfig` you got from the the setup process and paste it in
      [`src/lib/constants.ts`](https://github.com/exyleio/exyleio-web/blob/master/src/lib/constants.ts).
@@ -38,20 +32,13 @@ The domain will change to https://web.exyle.io in the future.
      [Project settings](https://console.firebase.google.com/project/_/settings/general/web)
      (select your project).
 
-5. Install and setup firebase CLI
+4. Start a local development server
+
+   - http://127.0.0.1:5173 - Website
+   - http://127.0.0.1:4000 - Firebase Emulator Suite
 
    ```
-   npm install -g firebase-tools
-   ```
-
-   ```
-   firebase emulator login
-   ```
-
-6. Start a local development server at http://127.0.0.1:5173
-
-   ```
-   npm run start
+   ./run.sh
    ```
 
 ## Learning
