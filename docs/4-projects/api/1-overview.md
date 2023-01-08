@@ -21,7 +21,7 @@ This is the documentation for the
 
 3. Start a local development server
 
-   - http://127.0.0.1 - API
+   - http://127.0.0.1/v1 - API
    - http://127.0.0.1/rapidoc - interactive API Documentation
    - http://127.0.0.1:5173 - [website](https://github.com/exyleio/exyleio-web)
      instance
@@ -30,15 +30,13 @@ This is the documentation for the
    ./run.sh
    ```
 
-4. Open http://127.0.0.1/ping in your browser and see if you get `PONG`
-
 ## How does it work?
 
 ### API Endpoint Documentation Generation
 
 To simplify the documentation process, [okapi](https://github.com/GREsau/okapi)
 was used to automate the generation of [OpenAPI](https://www.openapis.org)
-document. You can check this file at http://127.0.0.1/openapi.json. However, it
+document. You can check this file at http://127.0.0.1/v1/openapi.json. However, it
 is much simpler to open http://127.0.0.1/rapidoc and use the interactive
 [Rapidoc](https://rapidocweb.com) interface.
 
