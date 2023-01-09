@@ -21,8 +21,8 @@ This is the documentation for the
 
 3. Create a firebase project if you haven't already,
    [generate](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk)
-   and download a service account key and place it inside the `app` directory.
-   Beware, **THIS IS PRIVATE INFORMATION**.
+   and download a service account key and place it inside the `app` directory
+   as `serviceAccountKey,json`. Beware, **THIS FILE MUST REMAIN PRIVATE**.
 
 4. Start a local development server
 

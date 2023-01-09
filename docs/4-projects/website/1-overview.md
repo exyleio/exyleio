@@ -24,13 +24,17 @@ The domain will change to https://web.exyle.io in the future.
 2. [Setup Docker](/docs/contribution-guides/developers/docker) and install
    [Node.JS](https://nodejs.org)
 
-3. Setup a firebase project at https://console.firebase.google.com
+3. Create a firebase project if you haven't already.
 
    - Copy `firebaseConfig` you got from the the setup process and paste it in
      [`src/lib/constants.ts`](https://github.com/exyleio/exyleio-web/blob/master/src/lib/constants.ts).
      You can see the code again in the
      [Project settings](https://console.firebase.google.com/project/_/settings/general/web)
      (select your project).
+
+   - [generate](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk)
+     and download a service account key as `serviceAccountKey,json`.
+     Beware, **THIS FILE MUST REMAIN PRIVATE**.
 
 4. Create `.env` file
 

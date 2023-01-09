@@ -40,7 +40,12 @@ It is used to deploy and manage Exyle.io related services.
    DISCORD_BOT_ID=<DISCORD_BOT_ID>
    ```
 
-5. Start a local development server at http://localhost (same as
+5. Create a firebase project if you haven't already,
+   [generate](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk)
+   and download a service account key as `serviceAccountKey,json`.
+   Beware, **THIS FILE MUST REMAIN PRIVATE**.
+
+6. Start a local development server at http://localhost (same as
    http://localhost:80)
 
 ## Learning
