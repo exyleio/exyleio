@@ -5,8 +5,9 @@
 [Docker](https://docker.com) simplifies the creation and management of
 containerized environments. This allows you to download and set up any Exyle.io
 project within a minute without having to install and configure different
-dependencies. Simply run `docker compose up --build` and you will have a piece
-of the Exyle.io infrastructure running right inside your computer.
+dependencies. Simply execute the `./run.sh` script which contains the commands
+that does all the magic for you, and you will have a piece of the Exyle.io
+infrastructure running right inside your computer.
 
 To get started, read
 "[Getting Started Guide](https://docs.docker.com/get-started)" from the Docker
@@ -15,12 +16,6 @@ documentation or watch
 YouTube.
 
 ## Useful commands
-
-- Start containers
-
-  ```
-  docker compose up --build
-  ```
 
 - Start a container to interact with in the background.
 
