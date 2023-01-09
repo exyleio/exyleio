@@ -36,6 +36,20 @@ This is the documentation for the
    ./run.sh
    ```
 
+## Testing
+
+1. Install pytest
+
+   ```
+   pip install pytest
+   ```
+
+2. Run tests
+
+   ```
+   ./test.py
+   ```
+
 ## How does it work?
 
 ### API Endpoint Documentation Generation
