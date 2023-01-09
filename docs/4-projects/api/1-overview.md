@@ -19,9 +19,15 @@ This is the documentation for the
 
 2. [Setup Docker](/docs/contribution-guides/developers/docker)
 
-3. Start a local development server
+3. Create a firebase project if you haven't already,
+   [generate](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk)
+   and download a service account key and place it inside the `app` directory.
+   Beware, **THIS IS PRIVATE INFORMATION**.
+
+4. Start a local development server
 
    - http://127.0.0.1/v1 - API
+   - http://127.0.0.1:4000 - Firebase emulation suite
    - http://127.0.0.1/rapidoc - interactive API Documentation
    - http://127.0.0.1:5173 - [website](https://github.com/exyleio/exyleio-web)
      instance
