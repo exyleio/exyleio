@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "api"
+    },
+    {
+      "path": "deploy"
+    },
+    {
+      "path": "discord-bot"
+    },
+    {
+      "path": "docs"
+    },
+    {
+      "path": "game"
+    },
+    {
+      "path": "launcher"
+    },
+    {
+      "path": "status"
+    },
+    {
+      "path": "web"
+    }
+  ],
+  "settings": {}
+}
