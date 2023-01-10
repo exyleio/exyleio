@@ -1,6 +1,0 @@
-api_log/
-redis_stack_data/
-.env
-docker-compose.prod.yml
-exyleio-master-server-log-*
-serviceAccountKey.json
