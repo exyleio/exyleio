@@ -1,5 +1,3 @@
-# Exyle.io Scripts
-
-- submit issues [here](https://github.com/exyleio/exyleio/issues)
+# Exyle.io Master Repository
 
 ## [Documentation](https://exyleio-docs.web.app/docs/projects/scripts/overview)
