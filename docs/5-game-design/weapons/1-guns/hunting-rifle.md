@@ -1,3 +1,0 @@
-# Hunting Rifle
-
-WIP

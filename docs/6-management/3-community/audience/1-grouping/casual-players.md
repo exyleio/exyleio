@@ -1,3 +1,0 @@
-# Casual Players
-
-WIP

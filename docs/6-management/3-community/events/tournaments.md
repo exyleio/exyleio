@@ -1,3 +1,0 @@
-# Tournaments
-
-WIP

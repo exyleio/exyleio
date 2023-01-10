@@ -1,3 +1,0 @@
-# Hackers
-
-WIP

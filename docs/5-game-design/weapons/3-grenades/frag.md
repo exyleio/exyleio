@@ -1,3 +1,0 @@
-# Frag Grenade
-
-WIP

@@ -1,3 +1,0 @@
-# Cosmetics
-
-WIP

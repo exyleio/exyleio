@@ -1,3 +1,0 @@
-# In-Game Chat
-
-WIP

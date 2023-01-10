@@ -1,3 +1,0 @@
-# Sniper Rifle
-
-WIP

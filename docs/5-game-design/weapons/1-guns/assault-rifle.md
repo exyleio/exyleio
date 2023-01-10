@@ -1,3 +1,0 @@
-# Assault Rifle
-
-WIP

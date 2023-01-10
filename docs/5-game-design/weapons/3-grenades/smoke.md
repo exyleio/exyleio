@@ -1,3 +1,0 @@
-# Smoke Grenade
-
-WIP

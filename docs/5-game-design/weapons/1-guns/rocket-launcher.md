@@ -1,3 +1,0 @@
-# Rocket Launcher
-
-WIP

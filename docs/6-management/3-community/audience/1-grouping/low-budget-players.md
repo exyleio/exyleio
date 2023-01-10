@@ -1,3 +1,0 @@
-# Low Budget Players
-
-WIP
