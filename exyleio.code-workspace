@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "exyleio-api"
+    },
+    {
+      "path": "exyleio-deploy"
+    },
+    {
+      "path": "exyleio-discord-bot"
+    },
+    {
+      "path": "exyleio-docs"
+    },
+    {
+      "path": "exyleio-game"
+    },
+    {
+      "path": "exyleio-launcher"
+    },
+    {
+      "path": "exyleio-status"
+    },
+    {
+      "path": "exyleio-web"
+    }
+  ]
+}
