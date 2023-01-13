@@ -1,0 +1,53 @@
+# for development
+
+version: "3"
+
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    volumes:
+      - ./redis_stack_data/:/data
+
+  api:
+    depends_on:
+      - redis
+    restart: unless-stopped
+    environment:
+      # The Firebase Admin SDK automatically connect to the Authentication emulator
+      # when the FIREBASE_AUTH_EMULATOR_HOST environment variable is set.
+      # https://firebase.google.com/docs/emulator-suite/connect_auth#admin_sdks
+      - FIREBASE_AUTH_EMULATOR_HOST=host.docker.internal:9099
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 80:8000
+    build:
+      context: ./exyleio-api
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./exyleio-api:/app
+
+  discord-bot:
+    depends_on:
+      - api
+    restart: unless-stopped
+    build:
+      context: ./exyleio-discord-bot
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./exyleio-discord-bot:/app
+
+  web:
+    depends_on:
+      - api
+    build:
+      context: ./exyleio-web
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    ports:
+      - 5173:5173
+    volumes:
+      - ./exyleio-web:/app
