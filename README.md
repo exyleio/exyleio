@@ -1,3 +1,1 @@
-# Exyle.io Master Repository
-
-## [Documentation](https://exyleio-docs.web.app/docs/contribution-guides/developers/setting-up)
+Exyle.io has merged with [War Brokers](https://github.com/War-Brokers)
